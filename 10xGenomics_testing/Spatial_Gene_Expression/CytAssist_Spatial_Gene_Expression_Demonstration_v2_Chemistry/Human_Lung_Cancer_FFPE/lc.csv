@@ -1,0 +1,1191 @@
+origin.population,ECM.component,ECM.value,receiving.population,ECM.receptor,receptor.value,target.gene,target.value,TF,TF.value,annotation
+11,COL4A1,0.01,11,CD44,1,TMSB4X,1,NFATC4,0.01,
+11,COL4A1,0.01,11,CD44,1,TPPP3,0.01,NFIX,1,
+11,IGFBP3,1,11,EGFR,0.206,TMSB4X,1,NFATC4,0.01,
+11,IGFBP3,1,11,EGFR,0.206,TPPP3,0.01,NFIX,1,
+11,COL4A1,0.01,11,ITGA2,0.196,TPPP3,0.01,NFIX,1,a2b1 complex is enriched in the population
+11,COL4A1,0.01,11,ITGA2,0.196,TMSB4X,1,NFATC4,0.01,a2b1 complex is enriched in the population
+11,COL4A1,0.01,11,ITGA3,0.083,TPPP3,0.01,NFIX,1,a3b1 complex is enriched in the population
+11,COL4A1,0.01,11,ITGA3,0.083,TMSB4X,1,NFATC4,0.01,a3b1 complex is enriched in the population
+11,COL4A1,0.01,11,ITGA6,0.012,TMSB4X,1,NFATC4,0.01,a6b1 complex is enriched in the population
+11,COL4A1,0.01,11,ITGA6,0.012,TMSB4X,1,NFATC4,0.01,a6b4 complex is enriched in the population
+11,COL4A1,0.01,11,ITGA6,0.012,TPPP3,0.01,NFIX,1,a6b1 complex is enriched in the population
+11,COL4A1,0.01,11,ITGA6,0.012,TPPP3,0.01,NFIX,1,a6b4 complex is enriched in the population
+11,COL4A1,0.01,11,ITGB1,0.01,TPPP3,0.01,NFIX,1,a2b1 complex is enriched in the population
+11,COL4A1,0.01,11,ITGB1,0.01,TPPP3,0.01,NFIX,1,a6b1 complex is enriched in the population
+11,COL4A1,0.01,11,ITGB1,0.01,TPPP3,0.01,NFIX,1,a3b1 complex is enriched in the population
+11,COL4A1,0.01,11,ITGB1,0.01,TMSB4X,1,NFATC4,0.01,a2b1 complex is enriched in the population
+11,COL4A1,0.01,11,ITGB1,0.01,TMSB4X,1,NFATC4,0.01,a6b1 complex is enriched in the population
+11,COL4A1,0.01,11,ITGB1,0.01,TMSB4X,1,NFATC4,0.01,a3b1 complex is enriched in the population
+11,COL4A1,0.01,11,ITGB4,0.533,TMSB4X,1,NFATC4,0.01,a6b4 complex is enriched in the population
+11,COL4A1,0.01,11,ITGB4,0.533,TPPP3,0.01,NFIX,1,a6b4 complex is enriched in the population
+11,COL4A1,0.01,11,ITGB5,0.075,TMSB4X,1,NFATC4,0.01,
+11,COL4A1,0.01,11,ITGB5,0.075,TPPP3,0.01,NFIX,1,
+11,COL4A1,0.01,11,ITGB8,0.225,TMSB4X,1,NFATC4,0.01,
+11,COL4A1,0.01,11,ITGB8,0.225,TPPP3,0.01,NFIX,1,
+11,IGFBP3,1,11,PRKDC,0.039,TMSB4X,1,NFATC4,0.01,
+11,IGFBP3,1,11,PRKDC,0.039,TPPP3,0.01,NFIX,1,
+11,COL4A1,0.01,11,SDC1,0.424,TMSB4X,1,NFATC4,0.01,
+11,COL4A1,0.01,11,SDC1,0.424,TPPP3,0.01,NFIX,1,
+11,COL4A1,0.01,11,SDC4,0.785,TMSB4X,1,NFATC4,0.01,
+11,COL4A1,0.01,11,SDC4,0.785,TPPP3,0.01,NFIX,1,
+12,FN1,1,12,CCN2,0.113,MGP,0.206,FOXC1,1,
+12,FN1,1,12,CCN2,0.113,TPM2,0.01,MYC,0.01,
+12,FN1,1,12,CCN2,0.113,TAGLN,0.643,FOXC1,1,
+12,FN1,1,12,CCN2,0.113,VIM,1,FOXC1,1,
+12,FN1,1,12,CD44,0.259,TPM2,0.01,MYC,0.01,
+12,COL4A1,0.124,12,CD44,0.259,MGP,0.206,FOXC1,1,
+12,COL1A1,0.732,12,CD44,0.259,VIM,1,FOXC1,1,
+12,COL1A1,0.732,12,CD44,0.259,MGP,0.206,FOXC1,1,
+12,FN1,1,12,CD44,0.259,MGP,0.206,FOXC1,1,
+12,FN1,1,12,CD44,0.259,VIM,1,FOXC1,1,
+12,COL4A1,0.124,12,CD44,0.259,TAGLN,0.643,FOXC1,1,
+12,COL1A1,0.732,12,CD44,0.259,TAGLN,0.643,FOXC1,1,
+12,FN1,1,12,CD44,0.259,TAGLN,0.643,FOXC1,1,
+12,COL1A1,0.732,12,CD44,0.259,TPM2,0.01,MYC,0.01,
+12,COL4A1,0.124,12,CD44,0.259,TPM2,0.01,MYC,0.01,
+12,COL4A1,0.124,12,CD44,0.259,VIM,1,FOXC1,1,
+12,COL1A1,0.732,12,DDR1,0.073,MGP,0.206,FOXC1,1,
+12,FN1,1,12,DDR1,0.073,TPM2,0.01,MYC,0.01,
+12,COL1A1,0.732,12,DDR1,0.073,VIM,1,FOXC1,1,
+12,FN1,1,12,DDR1,0.073,MGP,0.206,FOXC1,1,
+12,FN1,1,12,DDR1,0.073,TAGLN,0.643,FOXC1,1,
+12,COL1A1,0.732,12,DDR1,0.073,TAGLN,0.643,FOXC1,1,
+12,FN1,1,12,DDR1,0.073,VIM,1,FOXC1,1,
+12,COL1A1,0.732,12,DDR1,0.073,TPM2,0.01,MYC,0.01,
+12,FN1,1,12,EGFR,0.034,VIM,1,FOXC1,1,
+12,IGFBP3,0.04,12,EGFR,0.034,VIM,1,FOXC1,1,
+12,FN1,1,12,EGFR,0.034,MGP,0.206,FOXC1,1,
+12,IGFBP3,0.04,12,EGFR,0.034,MGP,0.206,FOXC1,1,
+12,IGFBP3,0.04,12,EGFR,0.034,TAGLN,0.643,FOXC1,1,
+12,FN1,1,12,EGFR,0.034,TAGLN,0.643,FOXC1,1,
+12,IGFBP3,0.04,12,EGFR,0.034,TPM2,0.01,MYC,0.01,
+12,FN1,1,12,EGFR,0.034,TPM2,0.01,MYC,0.01,
+12,FN1,1,12,FN1,1,TPM2,0.01,MYC,0.01,
+12,FN1,1,12,FN1,1,MGP,0.206,FOXC1,1,
+12,CCN2,0.01,12,FN1,1,TPM2,0.01,MYC,0.01,
+12,FN1,1,12,FN1,1,VIM,1,FOXC1,1,
+12,CCN2,0.01,12,FN1,1,MGP,0.206,FOXC1,1,
+12,CCN2,0.01,12,FN1,1,VIM,1,FOXC1,1,
+12,CCN2,0.01,12,FN1,1,TAGLN,0.643,FOXC1,1,
+12,FN1,1,12,FN1,1,TAGLN,0.643,FOXC1,1,
+12,FN1,1,12,IGF2R,0.011,MGP,0.206,FOXC1,1,
+12,FN1,1,12,IGF2R,0.011,VIM,1,FOXC1,1,
+12,FN1,1,12,IGF2R,0.011,TAGLN,0.643,FOXC1,1,
+12,FN1,1,12,IGF2R,0.011,TPM2,0.01,MYC,0.01,
+12,FN1,1,12,ITGA1,0.029,TPM2,0.01,MYC,0.01,a1b1 complex is enriched in the population
+12,FN1,1,12,ITGA1,0.029,TAGLN,0.643,FOXC1,1,a1b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA1,0.029,VIM,1,FOXC1,1,a1b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA1,0.029,TAGLN,0.643,FOXC1,1,a1b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA1,0.029,TPM2,0.01,MYC,0.01,a1b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA1,0.029,VIM,1,FOXC1,1,a1b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA1,0.029,MGP,0.206,FOXC1,1,a1b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA1,0.029,TPM2,0.01,MYC,0.01,a1b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA1,0.029,MGP,0.206,FOXC1,1,a1b1 complex is enriched in the population
+12,FN1,1,12,ITGA1,0.029,VIM,1,FOXC1,1,a1b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA1,0.029,TAGLN,0.643,FOXC1,1,a1b1 complex is enriched in the population
+12,FN1,1,12,ITGA1,0.029,MGP,0.206,FOXC1,1,a1b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA2,0.012,TAGLN,0.643,FOXC1,1,a2b1 complex is enriched in the population
+12,FN1,1,12,ITGA2,0.012,TPM2,0.01,MYC,0.01,a2b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA2,0.012,TPM2,0.01,MYC,0.01,a2b1 complex is enriched in the population
+12,FN1,1,12,ITGA2,0.012,VIM,1,FOXC1,1,a2b1 complex is enriched in the population
+12,FN1,1,12,ITGA2,0.012,MGP,0.206,FOXC1,1,a2b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA2,0.012,MGP,0.206,FOXC1,1,a2b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA2,0.012,MGP,0.206,FOXC1,1,a2b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA2,0.012,TPM2,0.01,MYC,0.01,a2b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA2,0.012,TAGLN,0.643,FOXC1,1,a2b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA2,0.012,VIM,1,FOXC1,1,a2b1 complex is enriched in the population
+12,FN1,1,12,ITGA2,0.012,TAGLN,0.643,FOXC1,1,a2b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA2,0.012,VIM,1,FOXC1,1,a2b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA3,0.034,TAGLN,0.643,FOXC1,1,a3b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA3,0.034,VIM,1,FOXC1,1,a3b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA3,0.034,TPM2,0.01,MYC,0.01,a3b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA3,0.034,VIM,1,FOXC1,1,a3b1 complex is enriched in the population
+12,FN1,1,12,ITGA3,0.034,MGP,0.206,FOXC1,1,a3b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA3,0.034,MGP,0.206,FOXC1,1,a3b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA3,0.034,MGP,0.206,FOXC1,1,a3b1 complex is enriched in the population
+12,FN1,1,12,ITGA3,0.034,TAGLN,0.643,FOXC1,1,a3b1 complex is enriched in the population
+12,FN1,1,12,ITGA3,0.034,TPM2,0.01,MYC,0.01,a3b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA3,0.034,TAGLN,0.643,FOXC1,1,a3b1 complex is enriched in the population
+12,FN1,1,12,ITGA3,0.034,VIM,1,FOXC1,1,a3b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA3,0.034,TPM2,0.01,MYC,0.01,a3b1 complex is enriched in the population
+12,FN1,1,12,ITGA6,0.024,TPM2,0.01,MYC,0.01,a6b1 complex is enriched in the population
+12,FN1,1,12,ITGA6,0.024,TPM2,0.01,MYC,0.01,a6b4 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA6,0.024,VIM,1,FOXC1,1,a6b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA6,0.024,VIM,1,FOXC1,1,a6b4 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA6,0.024,VIM,1,FOXC1,1,a6b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA6,0.024,VIM,1,FOXC1,1,a6b4 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA6,0.024,TPM2,0.01,MYC,0.01,a6b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA6,0.024,TPM2,0.01,MYC,0.01,a6b4 complex is enriched in the population
+12,FN1,1,12,ITGA6,0.024,TAGLN,0.643,FOXC1,1,a6b1 complex is enriched in the population
+12,FN1,1,12,ITGA6,0.024,TAGLN,0.643,FOXC1,1,a6b4 complex is enriched in the population
+12,FN1,1,12,ITGA6,0.024,MGP,0.206,FOXC1,1,a6b1 complex is enriched in the population
+12,FN1,1,12,ITGA6,0.024,MGP,0.206,FOXC1,1,a6b4 complex is enriched in the population
+12,FN1,1,12,ITGA6,0.024,VIM,1,FOXC1,1,a6b1 complex is enriched in the population
+12,FN1,1,12,ITGA6,0.024,VIM,1,FOXC1,1,a6b4 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA6,0.024,MGP,0.206,FOXC1,1,a6b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA6,0.024,MGP,0.206,FOXC1,1,a6b4 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA6,0.024,TPM2,0.01,MYC,0.01,a6b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA6,0.024,TPM2,0.01,MYC,0.01,a6b4 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA6,0.024,TAGLN,0.643,FOXC1,1,a6b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA6,0.024,TAGLN,0.643,FOXC1,1,a6b4 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA6,0.024,TAGLN,0.643,FOXC1,1,a6b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA6,0.024,TAGLN,0.643,FOXC1,1,a6b4 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA6,0.024,MGP,0.206,FOXC1,1,a6b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA6,0.024,MGP,0.206,FOXC1,1,a6b4 complex is enriched in the population
+12,FN1,1,12,ITGA7,0.01,TPM2,0.01,MYC,0.01,a7b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA7,0.01,VIM,1,FOXC1,1,a7b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA7,0.01,TPM2,0.01,MYC,0.01,a7b1 complex is enriched in the population
+12,FN1,1,12,ITGA7,0.01,MGP,0.206,FOXC1,1,a7b1 complex is enriched in the population
+12,FN1,1,12,ITGA7,0.01,VIM,1,FOXC1,1,a7b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA7,0.01,TPM2,0.01,MYC,0.01,a7b1 complex is enriched in the population
+12,FN1,1,12,ITGA7,0.01,TAGLN,0.643,FOXC1,1,a7b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA7,0.01,TAGLN,0.643,FOXC1,1,a7b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA7,0.01,TAGLN,0.643,FOXC1,1,a7b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA7,0.01,MGP,0.206,FOXC1,1,a7b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA7,0.01,MGP,0.206,FOXC1,1,a7b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA7,0.01,VIM,1,FOXC1,1,a7b1 complex is enriched in the population
+12,FN1,1,12,ITGA8,0.186,VIM,1,FOXC1,1,a8b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA8,0.186,TPM2,0.01,MYC,0.01,a8b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA8,0.186,VIM,1,FOXC1,1,a8b1 complex is enriched in the population
+12,FN1,1,12,ITGA8,0.186,MGP,0.206,FOXC1,1,a8b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA8,0.186,TPM2,0.01,MYC,0.01,a8b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA8,0.186,TAGLN,0.643,FOXC1,1,a8b1 complex is enriched in the population
+12,FN1,1,12,ITGA8,0.186,TAGLN,0.643,FOXC1,1,a8b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGA8,0.186,MGP,0.206,FOXC1,1,a8b1 complex is enriched in the population
+12,FN1,1,12,ITGA8,0.186,TPM2,0.01,MYC,0.01,a8b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA8,0.186,TAGLN,0.643,FOXC1,1,a8b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA8,0.186,VIM,1,FOXC1,1,a8b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGA8,0.186,MGP,0.206,FOXC1,1,a8b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGAV,0.043,TAGLN,0.643,FOXC1,1,aVb5 complex is enriched in the population
+12,COL1A1,0.732,12,ITGAV,0.043,TAGLN,0.643,FOXC1,1,aVb1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGAV,0.043,VIM,1,FOXC1,1,aVb5 complex is enriched in the population
+12,COL1A1,0.732,12,ITGAV,0.043,VIM,1,FOXC1,1,aVb1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGAV,0.043,MGP,0.206,FOXC1,1,aVb5 complex is enriched in the population
+12,COL4A1,0.124,12,ITGAV,0.043,MGP,0.206,FOXC1,1,aVb1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGAV,0.043,VIM,1,FOXC1,1,aVb5 complex is enriched in the population
+12,COL4A1,0.124,12,ITGAV,0.043,VIM,1,FOXC1,1,aVb1 complex is enriched in the population
+12,FN1,1,12,ITGAV,0.043,VIM,1,FOXC1,1,aVb5 complex is enriched in the population
+12,FN1,1,12,ITGAV,0.043,VIM,1,FOXC1,1,aVb1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGAV,0.043,TPM2,0.01,MYC,0.01,aVb5 complex is enriched in the population
+12,COL4A1,0.124,12,ITGAV,0.043,TPM2,0.01,MYC,0.01,aVb1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGAV,0.043,MGP,0.206,FOXC1,1,aVb5 complex is enriched in the population
+12,COL1A1,0.732,12,ITGAV,0.043,MGP,0.206,FOXC1,1,aVb1 complex is enriched in the population
+12,FN1,1,12,ITGAV,0.043,TAGLN,0.643,FOXC1,1,aVb5 complex is enriched in the population
+12,FN1,1,12,ITGAV,0.043,TAGLN,0.643,FOXC1,1,aVb1 complex is enriched in the population
+12,FN1,1,12,ITGAV,0.043,TPM2,0.01,MYC,0.01,aVb5 complex is enriched in the population
+12,FN1,1,12,ITGAV,0.043,TPM2,0.01,MYC,0.01,aVb1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGAV,0.043,TAGLN,0.643,FOXC1,1,aVb5 complex is enriched in the population
+12,COL4A1,0.124,12,ITGAV,0.043,TAGLN,0.643,FOXC1,1,aVb1 complex is enriched in the population
+12,FN1,1,12,ITGAV,0.043,MGP,0.206,FOXC1,1,aVb5 complex is enriched in the population
+12,FN1,1,12,ITGAV,0.043,MGP,0.206,FOXC1,1,aVb1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGAV,0.043,TPM2,0.01,MYC,0.01,aVb5 complex is enriched in the population
+12,COL1A1,0.732,12,ITGAV,0.043,TPM2,0.01,MYC,0.01,aVb1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,a1b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,aVb1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,a7b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,a2b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,a3b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,a6b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,a8b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,VIM,1,FOXC1,1,a1b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,VIM,1,FOXC1,1,aVb1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,VIM,1,FOXC1,1,a7b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,VIM,1,FOXC1,1,a2b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,VIM,1,FOXC1,1,a3b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,VIM,1,FOXC1,1,a6b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,VIM,1,FOXC1,1,a8b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,MGP,0.206,FOXC1,1,a1b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,MGP,0.206,FOXC1,1,aVb1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,MGP,0.206,FOXC1,1,a7b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,MGP,0.206,FOXC1,1,a2b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,MGP,0.206,FOXC1,1,a3b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,MGP,0.206,FOXC1,1,a6b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,MGP,0.206,FOXC1,1,a8b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,a1b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,aVb1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,a7b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,a2b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,a3b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,a6b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,a8b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,a1b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,aVb1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,a7b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,a2b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,a3b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,a6b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,a8b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,VIM,1,FOXC1,1,a1b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,VIM,1,FOXC1,1,aVb1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,VIM,1,FOXC1,1,a7b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,VIM,1,FOXC1,1,a2b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,VIM,1,FOXC1,1,a3b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,VIM,1,FOXC1,1,a6b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,VIM,1,FOXC1,1,a8b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,MGP,0.206,FOXC1,1,a1b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,MGP,0.206,FOXC1,1,aVb1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,MGP,0.206,FOXC1,1,a7b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,MGP,0.206,FOXC1,1,a2b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,MGP,0.206,FOXC1,1,a3b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,MGP,0.206,FOXC1,1,a6b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,MGP,0.206,FOXC1,1,a8b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,MGP,0.206,FOXC1,1,a1b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,MGP,0.206,FOXC1,1,aVb1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,MGP,0.206,FOXC1,1,a7b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,MGP,0.206,FOXC1,1,a2b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,MGP,0.206,FOXC1,1,a3b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,MGP,0.206,FOXC1,1,a6b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,MGP,0.206,FOXC1,1,a8b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,VIM,1,FOXC1,1,a1b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,VIM,1,FOXC1,1,aVb1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,VIM,1,FOXC1,1,a7b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,VIM,1,FOXC1,1,a2b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,VIM,1,FOXC1,1,a3b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,VIM,1,FOXC1,1,a6b1 complex is enriched in the population
+12,FN1,1,12,ITGB1,0.109,VIM,1,FOXC1,1,a8b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,a1b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,aVb1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,a7b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,a2b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,a3b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,a6b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,a8b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,a1b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,aVb1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,a7b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,a2b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,a3b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,a6b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,TPM2,0.01,MYC,0.01,a8b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,a1b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,aVb1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,a7b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,a2b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,a3b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,a6b1 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB1,0.109,TAGLN,0.643,FOXC1,1,a8b1 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB4,0.041,MGP,0.206,FOXC1,1,a6b4 complex is enriched in the population
+12,FN1,1,12,ITGB4,0.041,VIM,1,FOXC1,1,a6b4 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB4,0.041,VIM,1,FOXC1,1,a6b4 complex is enriched in the population
+12,FN1,1,12,ITGB4,0.041,TPM2,0.01,MYC,0.01,a6b4 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB4,0.041,TPM2,0.01,MYC,0.01,a6b4 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB4,0.041,TAGLN,0.643,FOXC1,1,a6b4 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB4,0.041,VIM,1,FOXC1,1,a6b4 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB4,0.041,MGP,0.206,FOXC1,1,a6b4 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB4,0.041,TPM2,0.01,MYC,0.01,a6b4 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB4,0.041,TAGLN,0.643,FOXC1,1,a6b4 complex is enriched in the population
+12,FN1,1,12,ITGB4,0.041,TAGLN,0.643,FOXC1,1,a6b4 complex is enriched in the population
+12,FN1,1,12,ITGB4,0.041,MGP,0.206,FOXC1,1,a6b4 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB5,0.052,TAGLN,0.643,FOXC1,1,aVb5 complex is enriched in the population
+12,FN1,1,12,ITGB5,0.052,VIM,1,FOXC1,1,aVb5 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB5,0.052,TPM2,0.01,MYC,0.01,aVb5 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB5,0.052,TPM2,0.01,MYC,0.01,aVb5 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB5,0.052,VIM,1,FOXC1,1,aVb5 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB5,0.052,TAGLN,0.643,FOXC1,1,aVb5 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB5,0.052,VIM,1,FOXC1,1,aVb5 complex is enriched in the population
+12,COL1A1,0.732,12,ITGB5,0.052,MGP,0.206,FOXC1,1,aVb5 complex is enriched in the population
+12,FN1,1,12,ITGB5,0.052,TAGLN,0.643,FOXC1,1,aVb5 complex is enriched in the population
+12,FN1,1,12,ITGB5,0.052,TPM2,0.01,MYC,0.01,aVb5 complex is enriched in the population
+12,COL4A1,0.124,12,ITGB5,0.052,MGP,0.206,FOXC1,1,aVb5 complex is enriched in the population
+12,FN1,1,12,ITGB5,0.052,MGP,0.206,FOXC1,1,aVb5 complex is enriched in the population
+12,IGFBP3,0.04,12,PRKDC,0.014,TAGLN,0.643,FOXC1,1,
+12,IGFBP3,0.04,12,PRKDC,0.014,MGP,0.206,FOXC1,1,
+12,IGFBP3,0.04,12,PRKDC,0.014,TPM2,0.01,MYC,0.01,
+12,IGFBP3,0.04,12,PRKDC,0.014,VIM,1,FOXC1,1,
+12,FN1,1,12,SDC1,0.099,MGP,0.206,FOXC1,1,
+12,FN1,1,12,SDC1,0.099,TPM2,0.01,MYC,0.01,
+12,COL1A1,0.732,12,SDC1,0.099,TPM2,0.01,MYC,0.01,
+12,COL4A1,0.124,12,SDC1,0.099,MGP,0.206,FOXC1,1,
+12,FN1,1,12,SDC1,0.099,VIM,1,FOXC1,1,
+12,COL1A1,0.732,12,SDC1,0.099,MGP,0.206,FOXC1,1,
+12,COL4A1,0.124,12,SDC1,0.099,TAGLN,0.643,FOXC1,1,
+12,COL1A1,0.732,12,SDC1,0.099,TAGLN,0.643,FOXC1,1,
+12,FN1,1,12,SDC1,0.099,TAGLN,0.643,FOXC1,1,
+12,COL4A1,0.124,12,SDC1,0.099,TPM2,0.01,MYC,0.01,
+12,COL4A1,0.124,12,SDC1,0.099,VIM,1,FOXC1,1,
+12,COL1A1,0.732,12,SDC1,0.099,VIM,1,FOXC1,1,
+12,FN1,1,12,SDC4,0.059,MGP,0.206,FOXC1,1,
+12,COL4A1,0.124,12,SDC4,0.059,MGP,0.206,FOXC1,1,
+12,COL1A1,0.732,12,SDC4,0.059,MGP,0.206,FOXC1,1,
+12,FN1,1,12,SDC4,0.059,TPM2,0.01,MYC,0.01,
+12,COL4A1,0.124,12,SDC4,0.059,TPM2,0.01,MYC,0.01,
+12,COL1A1,0.732,12,SDC4,0.059,VIM,1,FOXC1,1,
+12,COL4A1,0.124,12,SDC4,0.059,VIM,1,FOXC1,1,
+12,COL1A1,0.732,12,SDC4,0.059,TAGLN,0.643,FOXC1,1,
+12,COL4A1,0.124,12,SDC4,0.059,TAGLN,0.643,FOXC1,1,
+12,FN1,1,12,SDC4,0.059,TAGLN,0.643,FOXC1,1,
+12,COL1A1,0.732,12,SDC4,0.059,TPM2,0.01,MYC,0.01,
+12,FN1,1,12,SDC4,0.059,VIM,1,FOXC1,1,
+12,FN1,1,12,TFRC,0.481,MGP,0.206,FOXC1,1,
+12,FN1,1,12,TFRC,0.481,TAGLN,0.643,FOXC1,1,
+12,FN1,1,12,TFRC,0.481,VIM,1,FOXC1,1,
+12,FN1,1,12,TFRC,0.481,TPM2,0.01,MYC,0.01,
+12,FN1,1,12,VHL,0.025,MGP,0.206,FOXC1,1,
+12,FN1,1,12,VHL,0.025,VIM,1,FOXC1,1,
+12,FN1,1,12,VHL,0.025,TAGLN,0.643,FOXC1,1,
+12,FN1,1,12,VHL,0.025,TPM2,0.01,MYC,0.01,
+7,FN1,0.646,7,CCN2,0.017,SFTPB,0.01,RARA,1,
+7,FN1,0.646,7,CCN2,0.017,TMSB4X,0.684,NFATC4,0.01,
+7,FN1,0.646,7,CCN2,0.017,FN1,0.111,MECOM,0.191,
+7,FN1,0.646,7,CCN2,0.017,COL1A1,1,NFATC4,0.01,
+7,FN1,0.646,7,CD44,0.324,FN1,0.111,MECOM,0.191,
+7,LAMA4,0.013,7,CD44,0.324,SFTPB,0.01,RARA,1,
+7,SPP1,1,7,CD44,0.324,SFTPB,0.01,RARA,1,
+7,FN1,0.646,7,CD44,0.324,SFTPB,0.01,RARA,1,
+7,SPP1,1,7,CD44,0.324,COL1A1,1,NFATC4,0.01,
+7,LAMA4,0.013,7,CD44,0.324,FN1,0.111,MECOM,0.191,
+7,SPP1,1,7,CD44,0.324,FN1,0.111,MECOM,0.191,
+7,LAMA4,0.013,7,CD44,0.324,COL1A1,1,NFATC4,0.01,
+7,LAMA4,0.013,7,CD44,0.324,TMSB4X,0.684,NFATC4,0.01,
+7,FN1,0.646,7,CD44,0.324,COL1A1,1,NFATC4,0.01,
+7,FN1,0.646,7,CD44,0.324,TMSB4X,0.684,NFATC4,0.01,
+7,SPP1,1,7,CD44,0.324,TMSB4X,0.684,NFATC4,0.01,
+7,THBS1,0.016,7,CD47,0.044,COL1A1,1,NFATC4,0.01,
+7,THBS1,0.016,7,CD47,0.044,FN1,0.111,MECOM,0.191,
+7,THBS1,0.016,7,CD47,0.044,SFTPB,0.01,RARA,1,
+7,THBS1,0.016,7,CD47,0.044,TMSB4X,0.684,NFATC4,0.01,
+7,FN1,0.646,7,DDR1,0.108,COL1A1,1,NFATC4,0.01,
+7,FN1,0.646,7,DDR1,0.108,FN1,0.111,MECOM,0.191,
+7,FN1,0.646,7,DDR1,0.108,TMSB4X,0.684,NFATC4,0.01,
+7,FN1,0.646,7,DDR1,0.108,SFTPB,0.01,RARA,1,
+7,FN1,0.646,7,EGFR,0.046,FN1,0.111,MECOM,0.191,
+7,FN1,0.646,7,EGFR,0.046,COL1A1,1,NFATC4,0.01,
+7,FN1,0.646,7,EGFR,0.046,TMSB4X,0.684,NFATC4,0.01,
+7,FN1,0.646,7,EGFR,0.046,SFTPB,0.01,RARA,1,
+7,CCN2,0.01,7,FN1,0.88,COL1A1,1,NFATC4,0.01,
+7,CCN2,0.01,7,FN1,0.88,SFTPB,0.01,RARA,1,
+7,FN1,0.646,7,FN1,0.88,FN1,0.111,MECOM,0.191,
+7,FN1,0.646,7,FN1,0.88,SFTPB,0.01,RARA,1,
+7,FN1,0.646,7,FN1,0.88,COL1A1,1,NFATC4,0.01,
+7,CCN2,0.01,7,FN1,0.88,TMSB4X,0.684,NFATC4,0.01,
+7,CCN2,0.01,7,FN1,0.88,FN1,0.111,MECOM,0.191,
+7,FN1,0.646,7,FN1,0.88,TMSB4X,0.684,NFATC4,0.01,
+7,FN1,0.646,7,IGF2R,0.018,COL1A1,1,NFATC4,0.01,
+7,FN1,0.646,7,IGF2R,0.018,FN1,0.111,MECOM,0.191,
+7,FN1,0.646,7,IGF2R,0.018,TMSB4X,0.684,NFATC4,0.01,
+7,FN1,0.646,7,IGF2R,0.018,SFTPB,0.01,RARA,1,
+7,SPARC,0.248,7,ILF3,0.102,FN1,0.111,MECOM,0.191,
+7,SPARC,0.248,7,ILF3,0.102,TMSB4X,0.684,NFATC4,0.01,
+7,SPARC,0.248,7,ILF3,0.102,SFTPB,0.01,RARA,1,
+7,SPARC,0.248,7,ILF3,0.102,COL1A1,1,NFATC4,0.01,
+7,FN1,0.646,7,ITGA1,0.019,FN1,0.111,MECOM,0.191,a1b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA1,0.019,TMSB4X,0.684,NFATC4,0.01,a1b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA1,0.019,SFTPB,0.01,RARA,1,a1b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA1,0.019,SFTPB,0.01,RARA,1,a1b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA1,0.019,FN1,0.111,MECOM,0.191,a1b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA1,0.019,TMSB4X,0.684,NFATC4,0.01,a1b1 complex is enriched in the population
+7,SPP1,1,7,ITGA1,0.019,TMSB4X,0.684,NFATC4,0.01,a1b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA1,0.019,SFTPB,0.01,RARA,1,a1b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA1,0.019,COL1A1,1,NFATC4,0.01,a1b1 complex is enriched in the population
+7,SPP1,1,7,ITGA1,0.019,SFTPB,0.01,RARA,1,a1b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA1,0.019,COL1A1,1,NFATC4,0.01,a1b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA1,0.019,FN1,0.111,MECOM,0.191,a1b1 complex is enriched in the population
+7,SPP1,1,7,ITGA1,0.019,COL1A1,1,NFATC4,0.01,a1b1 complex is enriched in the population
+7,SPP1,1,7,ITGA1,0.019,FN1,0.111,MECOM,0.191,a1b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA1,0.019,TMSB4X,0.684,NFATC4,0.01,a1b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA1,0.019,COL1A1,1,NFATC4,0.01,a1b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA2,0.069,FN1,0.111,MECOM,0.191,a2b1 complex is enriched in the population
+7,SPP1,1,7,ITGA2,0.069,SFTPB,0.01,RARA,1,a2b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA2,0.069,TMSB4X,0.684,NFATC4,0.01,a2b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA2,0.069,SFTPB,0.01,RARA,1,a2b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA2,0.069,COL1A1,1,NFATC4,0.01,a2b1 complex is enriched in the population
+7,SPP1,1,7,ITGA2,0.069,COL1A1,1,NFATC4,0.01,a2b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA2,0.069,COL1A1,1,NFATC4,0.01,a2b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA2,0.069,FN1,0.111,MECOM,0.191,a2b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA2,0.069,SFTPB,0.01,RARA,1,a2b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA2,0.069,SFTPB,0.01,RARA,1,a2b1 complex is enriched in the population
+7,SPP1,1,7,ITGA2,0.069,TMSB4X,0.684,NFATC4,0.01,a2b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA2,0.069,COL1A1,1,NFATC4,0.01,a2b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA2,0.069,TMSB4X,0.684,NFATC4,0.01,a2b1 complex is enriched in the population
+7,SPP1,1,7,ITGA2,0.069,FN1,0.111,MECOM,0.191,a2b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA2,0.069,TMSB4X,0.684,NFATC4,0.01,a2b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA2,0.069,FN1,0.111,MECOM,0.191,a2b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA3,0.022,SFTPB,0.01,RARA,1,a3b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA3,0.022,TMSB4X,0.684,NFATC4,0.01,a3b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA3,0.022,TMSB4X,0.684,NFATC4,0.01,a3b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA3,0.022,FN1,0.111,MECOM,0.191,a3b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA3,0.022,COL1A1,1,NFATC4,0.01,a3b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA3,0.022,COL1A1,1,NFATC4,0.01,a3b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA3,0.022,FN1,0.111,MECOM,0.191,a3b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA3,0.022,FN1,0.111,MECOM,0.191,a3b1 complex is enriched in the population
+7,SPP1,1,7,ITGA3,0.022,SFTPB,0.01,RARA,1,a3b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA3,0.022,SFTPB,0.01,RARA,1,a3b1 complex is enriched in the population
+7,SPP1,1,7,ITGA3,0.022,COL1A1,1,NFATC4,0.01,a3b1 complex is enriched in the population
+7,SPP1,1,7,ITGA3,0.022,FN1,0.111,MECOM,0.191,a3b1 complex is enriched in the population
+7,SPP1,1,7,ITGA3,0.022,TMSB4X,0.684,NFATC4,0.01,a3b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA3,0.022,TMSB4X,0.684,NFATC4,0.01,a3b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA3,0.022,SFTPB,0.01,RARA,1,a3b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA3,0.022,COL1A1,1,NFATC4,0.01,a3b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA5,0.01,SFTPB,0.01,RARA,1,a5b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA5,0.01,FN1,0.111,MECOM,0.191,a5b1 complex is enriched in the population
+7,CCN2,0.01,7,ITGA5,0.01,SFTPB,0.01,RARA,1,a5b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA5,0.01,TMSB4X,0.684,NFATC4,0.01,a5b1 complex is enriched in the population
+7,SPP1,1,7,ITGA5,0.01,COL1A1,1,NFATC4,0.01,a5b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA5,0.01,COL1A1,1,NFATC4,0.01,a5b1 complex is enriched in the population
+7,CCN2,0.01,7,ITGA5,0.01,COL1A1,1,NFATC4,0.01,a5b1 complex is enriched in the population
+7,SPP1,1,7,ITGA5,0.01,TMSB4X,0.684,NFATC4,0.01,a5b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA5,0.01,SFTPB,0.01,RARA,1,a5b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA5,0.01,SFTPB,0.01,RARA,1,a5b1 complex is enriched in the population
+7,CCN2,0.01,7,ITGA5,0.01,FN1,0.111,MECOM,0.191,a5b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA5,0.01,TMSB4X,0.684,NFATC4,0.01,a5b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA5,0.01,COL1A1,1,NFATC4,0.01,a5b1 complex is enriched in the population
+7,SPP1,1,7,ITGA5,0.01,FN1,0.111,MECOM,0.191,a5b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA5,0.01,COL1A1,1,NFATC4,0.01,a5b1 complex is enriched in the population
+7,CCN2,0.01,7,ITGA5,0.01,TMSB4X,0.684,NFATC4,0.01,a5b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA5,0.01,FN1,0.111,MECOM,0.191,a5b1 complex is enriched in the population
+7,SPP1,1,7,ITGA5,0.01,SFTPB,0.01,RARA,1,a5b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA5,0.01,FN1,0.111,MECOM,0.191,a5b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA5,0.01,TMSB4X,0.684,NFATC4,0.01,a5b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA6,0.043,TMSB4X,0.684,NFATC4,0.01,a6b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA6,0.043,TMSB4X,0.684,NFATC4,0.01,a6b4 complex is enriched in the population
+7,THBS1,0.016,7,ITGA6,0.043,SFTPB,0.01,RARA,1,a6b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA6,0.043,SFTPB,0.01,RARA,1,a6b4 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA6,0.043,COL1A1,1,NFATC4,0.01,a6b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA6,0.043,COL1A1,1,NFATC4,0.01,a6b4 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA6,0.043,SFTPB,0.01,RARA,1,a6b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA6,0.043,SFTPB,0.01,RARA,1,a6b4 complex is enriched in the population
+7,FN1,0.646,7,ITGA6,0.043,FN1,0.111,MECOM,0.191,a6b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA6,0.043,FN1,0.111,MECOM,0.191,a6b4 complex is enriched in the population
+7,SPP1,1,7,ITGA6,0.043,SFTPB,0.01,RARA,1,a6b1 complex is enriched in the population
+7,SPP1,1,7,ITGA6,0.043,SFTPB,0.01,RARA,1,a6b4 complex is enriched in the population
+7,SPP1,1,7,ITGA6,0.043,FN1,0.111,MECOM,0.191,a6b1 complex is enriched in the population
+7,SPP1,1,7,ITGA6,0.043,FN1,0.111,MECOM,0.191,a6b4 complex is enriched in the population
+7,THBS1,0.016,7,ITGA6,0.043,FN1,0.111,MECOM,0.191,a6b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA6,0.043,FN1,0.111,MECOM,0.191,a6b4 complex is enriched in the population
+7,SPP1,1,7,ITGA6,0.043,TMSB4X,0.684,NFATC4,0.01,a6b1 complex is enriched in the population
+7,SPP1,1,7,ITGA6,0.043,TMSB4X,0.684,NFATC4,0.01,a6b4 complex is enriched in the population
+7,FN1,0.646,7,ITGA6,0.043,COL1A1,1,NFATC4,0.01,a6b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA6,0.043,COL1A1,1,NFATC4,0.01,a6b4 complex is enriched in the population
+7,SPP1,1,7,ITGA6,0.043,COL1A1,1,NFATC4,0.01,a6b1 complex is enriched in the population
+7,SPP1,1,7,ITGA6,0.043,COL1A1,1,NFATC4,0.01,a6b4 complex is enriched in the population
+7,FN1,0.646,7,ITGA6,0.043,SFTPB,0.01,RARA,1,a6b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA6,0.043,SFTPB,0.01,RARA,1,a6b4 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA6,0.043,TMSB4X,0.684,NFATC4,0.01,a6b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA6,0.043,TMSB4X,0.684,NFATC4,0.01,a6b4 complex is enriched in the population
+7,FN1,0.646,7,ITGA6,0.043,TMSB4X,0.684,NFATC4,0.01,a6b1 complex is enriched in the population
+7,FN1,0.646,7,ITGA6,0.043,TMSB4X,0.684,NFATC4,0.01,a6b4 complex is enriched in the population
+7,THBS1,0.016,7,ITGA6,0.043,COL1A1,1,NFATC4,0.01,a6b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGA6,0.043,COL1A1,1,NFATC4,0.01,a6b4 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA6,0.043,FN1,0.111,MECOM,0.191,a6b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGA6,0.043,FN1,0.111,MECOM,0.191,a6b4 complex is enriched in the population
+7,FN1,0.646,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb6 complex is enriched in the population
+7,FN1,0.646,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb8 complex is enriched in the population
+7,FN1,0.646,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb5 complex is enriched in the population
+7,FN1,0.646,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb6 complex is enriched in the population
+7,LAMA4,0.013,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb8 complex is enriched in the population
+7,LAMA4,0.013,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb5 complex is enriched in the population
+7,LAMA4,0.013,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb1 complex is enriched in the population
+7,FN1,0.646,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb6 complex is enriched in the population
+7,FN1,0.646,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb8 complex is enriched in the population
+7,FN1,0.646,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb5 complex is enriched in the population
+7,FN1,0.646,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb1 complex is enriched in the population
+7,SPP1,1,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb6 complex is enriched in the population
+7,SPP1,1,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb8 complex is enriched in the population
+7,SPP1,1,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb5 complex is enriched in the population
+7,SPP1,1,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb1 complex is enriched in the population
+7,AGRN,0.043,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb6 complex is enriched in the population
+7,AGRN,0.043,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb8 complex is enriched in the population
+7,AGRN,0.043,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb5 complex is enriched in the population
+7,AGRN,0.043,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb1 complex is enriched in the population
+7,SPP1,1,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb6 complex is enriched in the population
+7,SPP1,1,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb8 complex is enriched in the population
+7,SPP1,1,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb5 complex is enriched in the population
+7,SPP1,1,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb1 complex is enriched in the population
+7,SPP1,1,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb6 complex is enriched in the population
+7,SPP1,1,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb8 complex is enriched in the population
+7,SPP1,1,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb5 complex is enriched in the population
+7,SPP1,1,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb6 complex is enriched in the population
+7,LAMA4,0.013,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb8 complex is enriched in the population
+7,LAMA4,0.013,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb5 complex is enriched in the population
+7,LAMA4,0.013,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb1 complex is enriched in the population
+7,AGRN,0.043,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb6 complex is enriched in the population
+7,AGRN,0.043,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb8 complex is enriched in the population
+7,AGRN,0.043,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb5 complex is enriched in the population
+7,AGRN,0.043,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb1 complex is enriched in the population
+7,AGRN,0.043,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb6 complex is enriched in the population
+7,AGRN,0.043,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb8 complex is enriched in the population
+7,AGRN,0.043,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb5 complex is enriched in the population
+7,AGRN,0.043,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb1 complex is enriched in the population
+7,AGRN,0.043,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb6 complex is enriched in the population
+7,AGRN,0.043,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb8 complex is enriched in the population
+7,AGRN,0.043,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb5 complex is enriched in the population
+7,AGRN,0.043,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb6 complex is enriched in the population
+7,LAMA4,0.013,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb8 complex is enriched in the population
+7,LAMA4,0.013,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb5 complex is enriched in the population
+7,LAMA4,0.013,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb1 complex is enriched in the population
+7,THBS1,0.016,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb6 complex is enriched in the population
+7,THBS1,0.016,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb8 complex is enriched in the population
+7,THBS1,0.016,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb5 complex is enriched in the population
+7,THBS1,0.016,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb1 complex is enriched in the population
+7,FN1,0.646,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb6 complex is enriched in the population
+7,FN1,0.646,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb8 complex is enriched in the population
+7,FN1,0.646,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb5 complex is enriched in the population
+7,FN1,0.646,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb1 complex is enriched in the population
+7,THBS1,0.016,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb6 complex is enriched in the population
+7,THBS1,0.016,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb8 complex is enriched in the population
+7,THBS1,0.016,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb5 complex is enriched in the population
+7,THBS1,0.016,7,ITGAV,0.035,SFTPB,0.01,RARA,1,aVb1 complex is enriched in the population
+7,SPP1,1,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb6 complex is enriched in the population
+7,SPP1,1,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb8 complex is enriched in the population
+7,SPP1,1,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb5 complex is enriched in the population
+7,SPP1,1,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb1 complex is enriched in the population
+7,THBS1,0.016,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb6 complex is enriched in the population
+7,THBS1,0.016,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb8 complex is enriched in the population
+7,THBS1,0.016,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb5 complex is enriched in the population
+7,THBS1,0.016,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb1 complex is enriched in the population
+7,THBS1,0.016,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb6 complex is enriched in the population
+7,THBS1,0.016,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb8 complex is enriched in the population
+7,THBS1,0.016,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb5 complex is enriched in the population
+7,THBS1,0.016,7,ITGAV,0.035,FN1,0.111,MECOM,0.191,aVb1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb6 complex is enriched in the population
+7,LAMA4,0.013,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb8 complex is enriched in the population
+7,LAMA4,0.013,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb5 complex is enriched in the population
+7,LAMA4,0.013,7,ITGAV,0.035,TMSB4X,0.684,NFATC4,0.01,aVb1 complex is enriched in the population
+7,FN1,0.646,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb6 complex is enriched in the population
+7,FN1,0.646,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb8 complex is enriched in the population
+7,FN1,0.646,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb5 complex is enriched in the population
+7,FN1,0.646,7,ITGAV,0.035,COL1A1,1,NFATC4,0.01,aVb1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,SFTPB,0.01,RARA,1,aVb1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a5b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a3b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a2b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a6b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a1b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,SFTPB,0.01,RARA,1,aVb1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a5b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a3b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a2b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a6b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a1b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,aVb1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a5b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a3b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a2b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a6b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a1b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,SFTPB,0.01,RARA,1,aVb1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a5b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a3b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a2b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a6b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a1b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,aVb1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a5b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a3b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a2b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a6b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a1b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,aVb1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a5b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a3b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a2b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a6b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a1b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,SFTPB,0.01,RARA,1,aVb1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a5b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a3b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a2b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a6b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a1b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,aVb1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a5b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a3b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a2b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a6b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a1b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,SFTPB,0.01,RARA,1,aVb1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a5b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a3b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a2b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a6b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,SFTPB,0.01,RARA,1,a1b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,aVb1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a5b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a3b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a2b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a6b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a1b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,aVb1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a5b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a3b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a2b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a6b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a1b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,aVb1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a5b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a3b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a2b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a6b1 complex is enriched in the population
+7,THBS1,0.016,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a1b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,aVb1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a5b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a3b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a2b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a6b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a1b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,aVb1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a5b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a3b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a2b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a6b1 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a1b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,aVb1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a5b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a3b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a2b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a6b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a1b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,aVb1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a5b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a3b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a2b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a6b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,COL1A1,1,NFATC4,0.01,a1b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,aVb1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a5b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a3b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a2b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a6b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a1b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,aVb1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a5b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a3b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a2b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a6b1 complex is enriched in the population
+7,FN1,0.646,7,ITGB1,0.058,FN1,0.111,MECOM,0.191,a1b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,aVb1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a5b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a3b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a2b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a6b1 complex is enriched in the population
+7,AGRN,0.043,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a1b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,aVb1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a5b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a3b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a2b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a6b1 complex is enriched in the population
+7,SPP1,1,7,ITGB1,0.058,TMSB4X,0.684,NFATC4,0.01,a1b1 complex is enriched in the population
+7,SPP1,1,7,ITGB4,0.08,TMSB4X,0.684,NFATC4,0.01,a6b4 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB4,0.08,TMSB4X,0.684,NFATC4,0.01,a6b4 complex is enriched in the population
+7,THBS1,0.016,7,ITGB4,0.08,TMSB4X,0.684,NFATC4,0.01,a6b4 complex is enriched in the population
+7,THBS1,0.016,7,ITGB4,0.08,COL1A1,1,NFATC4,0.01,a6b4 complex is enriched in the population
+7,FN1,0.646,7,ITGB4,0.08,FN1,0.111,MECOM,0.191,a6b4 complex is enriched in the population
+7,FN1,0.646,7,ITGB4,0.08,TMSB4X,0.684,NFATC4,0.01,a6b4 complex is enriched in the population
+7,THBS1,0.016,7,ITGB4,0.08,FN1,0.111,MECOM,0.191,a6b4 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB4,0.08,COL1A1,1,NFATC4,0.01,a6b4 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB4,0.08,SFTPB,0.01,RARA,1,a6b4 complex is enriched in the population
+7,FN1,0.646,7,ITGB4,0.08,COL1A1,1,NFATC4,0.01,a6b4 complex is enriched in the population
+7,THBS1,0.016,7,ITGB4,0.08,SFTPB,0.01,RARA,1,a6b4 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB4,0.08,FN1,0.111,MECOM,0.191,a6b4 complex is enriched in the population
+7,SPP1,1,7,ITGB4,0.08,FN1,0.111,MECOM,0.191,a6b4 complex is enriched in the population
+7,SPP1,1,7,ITGB4,0.08,SFTPB,0.01,RARA,1,a6b4 complex is enriched in the population
+7,SPP1,1,7,ITGB4,0.08,COL1A1,1,NFATC4,0.01,a6b4 complex is enriched in the population
+7,FN1,0.646,7,ITGB4,0.08,SFTPB,0.01,RARA,1,a6b4 complex is enriched in the population
+7,SPP1,1,7,ITGB5,0.038,COL1A1,1,NFATC4,0.01,aVb5 complex is enriched in the population
+7,THBS1,0.016,7,ITGB5,0.038,SFTPB,0.01,RARA,1,aVb5 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB5,0.038,SFTPB,0.01,RARA,1,aVb5 complex is enriched in the population
+7,SPP1,1,7,ITGB5,0.038,FN1,0.111,MECOM,0.191,aVb5 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB5,0.038,TMSB4X,0.684,NFATC4,0.01,aVb5 complex is enriched in the population
+7,THBS1,0.016,7,ITGB5,0.038,TMSB4X,0.684,NFATC4,0.01,aVb5 complex is enriched in the population
+7,FN1,0.646,7,ITGB5,0.038,SFTPB,0.01,RARA,1,aVb5 complex is enriched in the population
+7,SPP1,1,7,ITGB5,0.038,SFTPB,0.01,RARA,1,aVb5 complex is enriched in the population
+7,THBS1,0.016,7,ITGB5,0.038,COL1A1,1,NFATC4,0.01,aVb5 complex is enriched in the population
+7,FN1,0.646,7,ITGB5,0.038,TMSB4X,0.684,NFATC4,0.01,aVb5 complex is enriched in the population
+7,SPP1,1,7,ITGB5,0.038,TMSB4X,0.684,NFATC4,0.01,aVb5 complex is enriched in the population
+7,FN1,0.646,7,ITGB5,0.038,FN1,0.111,MECOM,0.191,aVb5 complex is enriched in the population
+7,THBS1,0.016,7,ITGB5,0.038,FN1,0.111,MECOM,0.191,aVb5 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB5,0.038,FN1,0.111,MECOM,0.191,aVb5 complex is enriched in the population
+7,FN1,0.646,7,ITGB5,0.038,COL1A1,1,NFATC4,0.01,aVb5 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB5,0.038,COL1A1,1,NFATC4,0.01,aVb5 complex is enriched in the population
+7,THBS1,0.016,7,ITGB6,0.013,SFTPB,0.01,RARA,1,aVb6 complex is enriched in the population
+7,FN1,0.646,7,ITGB6,0.013,TMSB4X,0.684,NFATC4,0.01,aVb6 complex is enriched in the population
+7,FN1,0.646,7,ITGB6,0.013,FN1,0.111,MECOM,0.191,aVb6 complex is enriched in the population
+7,FN1,0.646,7,ITGB6,0.013,SFTPB,0.01,RARA,1,aVb6 complex is enriched in the population
+7,THBS1,0.016,7,ITGB6,0.013,COL1A1,1,NFATC4,0.01,aVb6 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB6,0.013,SFTPB,0.01,RARA,1,aVb6 complex is enriched in the population
+7,THBS1,0.016,7,ITGB6,0.013,TMSB4X,0.684,NFATC4,0.01,aVb6 complex is enriched in the population
+7,THBS1,0.016,7,ITGB6,0.013,FN1,0.111,MECOM,0.191,aVb6 complex is enriched in the population
+7,SPP1,1,7,ITGB6,0.013,TMSB4X,0.684,NFATC4,0.01,aVb6 complex is enriched in the population
+7,SPP1,1,7,ITGB6,0.013,FN1,0.111,MECOM,0.191,aVb6 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB6,0.013,TMSB4X,0.684,NFATC4,0.01,aVb6 complex is enriched in the population
+7,SPP1,1,7,ITGB6,0.013,SFTPB,0.01,RARA,1,aVb6 complex is enriched in the population
+7,FN1,0.646,7,ITGB6,0.013,COL1A1,1,NFATC4,0.01,aVb6 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB6,0.013,COL1A1,1,NFATC4,0.01,aVb6 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB6,0.013,FN1,0.111,MECOM,0.191,aVb6 complex is enriched in the population
+7,SPP1,1,7,ITGB6,0.013,COL1A1,1,NFATC4,0.01,aVb6 complex is enriched in the population
+7,FN1,0.646,7,ITGB8,0.011,COL1A1,1,NFATC4,0.01,aVb8 complex is enriched in the population
+7,SPP1,1,7,ITGB8,0.011,SFTPB,0.01,RARA,1,aVb8 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB8,0.011,TMSB4X,0.684,NFATC4,0.01,aVb8 complex is enriched in the population
+7,FN1,0.646,7,ITGB8,0.011,SFTPB,0.01,RARA,1,aVb8 complex is enriched in the population
+7,FN1,0.646,7,ITGB8,0.011,TMSB4X,0.684,NFATC4,0.01,aVb8 complex is enriched in the population
+7,THBS1,0.016,7,ITGB8,0.011,COL1A1,1,NFATC4,0.01,aVb8 complex is enriched in the population
+7,SPP1,1,7,ITGB8,0.011,FN1,0.111,MECOM,0.191,aVb8 complex is enriched in the population
+7,THBS1,0.016,7,ITGB8,0.011,TMSB4X,0.684,NFATC4,0.01,aVb8 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB8,0.011,SFTPB,0.01,RARA,1,aVb8 complex is enriched in the population
+7,SPP1,1,7,ITGB8,0.011,COL1A1,1,NFATC4,0.01,aVb8 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB8,0.011,COL1A1,1,NFATC4,0.01,aVb8 complex is enriched in the population
+7,THBS1,0.016,7,ITGB8,0.011,FN1,0.111,MECOM,0.191,aVb8 complex is enriched in the population
+7,SPP1,1,7,ITGB8,0.011,TMSB4X,0.684,NFATC4,0.01,aVb8 complex is enriched in the population
+7,LAMA4,0.013,7,ITGB8,0.011,FN1,0.111,MECOM,0.191,aVb8 complex is enriched in the population
+7,FN1,0.646,7,ITGB8,0.011,FN1,0.111,MECOM,0.191,aVb8 complex is enriched in the population
+7,THBS1,0.016,7,ITGB8,0.011,SFTPB,0.01,RARA,1,aVb8 complex is enriched in the population
+7,AGRN,0.043,7,LRP1,0.039,COL1A1,1,NFATC4,0.01,
+7,AGRN,0.043,7,LRP1,0.039,FN1,0.111,MECOM,0.191,
+7,THBS1,0.016,7,LRP1,0.039,COL1A1,1,NFATC4,0.01,
+7,THBS1,0.016,7,LRP1,0.039,SFTPB,0.01,RARA,1,
+7,AGRN,0.043,7,LRP1,0.039,TMSB4X,0.684,NFATC4,0.01,
+7,AGRN,0.043,7,LRP1,0.039,SFTPB,0.01,RARA,1,
+7,THBS1,0.016,7,LRP1,0.039,TMSB4X,0.684,NFATC4,0.01,
+7,THBS1,0.016,7,LRP1,0.039,FN1,0.111,MECOM,0.191,
+7,AGRN,0.043,7,LRP8,0.02,SFTPB,0.01,RARA,1,
+7,AGRN,0.043,7,LRP8,0.02,COL1A1,1,NFATC4,0.01,
+7,AGRN,0.043,7,LRP8,0.02,FN1,0.111,MECOM,0.191,
+7,AGRN,0.043,7,LRP8,0.02,TMSB4X,0.684,NFATC4,0.01,
+7,SPARC,0.248,7,LSG1,0.037,COL1A1,1,NFATC4,0.01,
+7,SPARC,0.248,7,LSG1,0.037,TMSB4X,0.684,NFATC4,0.01,
+7,SPARC,0.248,7,LSG1,0.037,SFTPB,0.01,RARA,1,
+7,SPARC,0.248,7,LSG1,0.037,FN1,0.111,MECOM,0.191,
+7,SPP1,1,7,NCSTN,0.022,FN1,0.111,MECOM,0.191,
+7,SPP1,1,7,NCSTN,0.022,TMSB4X,0.684,NFATC4,0.01,
+7,SPP1,1,7,NCSTN,0.022,SFTPB,0.01,RARA,1,
+7,SPP1,1,7,NCSTN,0.022,COL1A1,1,NFATC4,0.01,
+7,AGRN,0.043,7,PTPRS,0.04,SFTPB,0.01,RARA,1,
+7,AGRN,0.043,7,PTPRS,0.04,FN1,0.111,MECOM,0.191,
+7,AGRN,0.043,7,PTPRS,0.04,COL1A1,1,NFATC4,0.01,
+7,AGRN,0.043,7,PTPRS,0.04,TMSB4X,0.684,NFATC4,0.01,
+7,THBS1,0.016,7,SDC1,0.197,SFTPB,0.01,RARA,1,
+7,SPP1,1,7,SDC1,0.197,COL1A1,1,NFATC4,0.01,
+7,FN1,0.646,7,SDC1,0.197,COL1A1,1,NFATC4,0.01,
+7,SPP1,1,7,SDC1,0.197,TMSB4X,0.684,NFATC4,0.01,
+7,THBS1,0.016,7,SDC1,0.197,COL1A1,1,NFATC4,0.01,
+7,FN1,0.646,7,SDC1,0.197,SFTPB,0.01,RARA,1,
+7,SPP1,1,7,SDC1,0.197,SFTPB,0.01,RARA,1,
+7,THBS1,0.016,7,SDC1,0.197,FN1,0.111,MECOM,0.191,
+7,THBS1,0.016,7,SDC1,0.197,TMSB4X,0.684,NFATC4,0.01,
+7,SPP1,1,7,SDC1,0.197,FN1,0.111,MECOM,0.191,
+7,FN1,0.646,7,SDC1,0.197,FN1,0.111,MECOM,0.191,
+7,FN1,0.646,7,SDC1,0.197,TMSB4X,0.684,NFATC4,0.01,
+7,THBS1,0.016,7,SDC4,0.035,SFTPB,0.01,RARA,1,
+7,FN1,0.646,7,SDC4,0.035,FN1,0.111,MECOM,0.191,
+7,THBS1,0.016,7,SDC4,0.035,FN1,0.111,MECOM,0.191,
+7,THBS1,0.016,7,SDC4,0.035,COL1A1,1,NFATC4,0.01,
+7,FN1,0.646,7,SDC4,0.035,COL1A1,1,NFATC4,0.01,
+7,FN1,0.646,7,SDC4,0.035,TMSB4X,0.684,NFATC4,0.01,
+7,THBS1,0.016,7,SDC4,0.035,TMSB4X,0.684,NFATC4,0.01,
+7,FN1,0.646,7,SDC4,0.035,SFTPB,0.01,RARA,1,
+7,SPARC,0.248,7,TBC1D14,0.036,FN1,0.111,MECOM,0.191,
+7,SPARC,0.248,7,TBC1D14,0.036,SFTPB,0.01,RARA,1,
+7,SPARC,0.248,7,TBC1D14,0.036,COL1A1,1,NFATC4,0.01,
+7,SPARC,0.248,7,TBC1D14,0.036,TMSB4X,0.684,NFATC4,0.01,
+7,FN1,0.646,7,TFRC,1,COL1A1,1,NFATC4,0.01,
+7,FN1,0.646,7,TFRC,1,SFTPB,0.01,RARA,1,
+7,FN1,0.646,7,TFRC,1,TMSB4X,0.684,NFATC4,0.01,
+7,FN1,0.646,7,TFRC,1,FN1,0.111,MECOM,0.191,
+7,LAMA4,0.013,7,TP53,0.016,FN1,0.111,MECOM,0.191,
+7,LAMA4,0.013,7,TP53,0.016,TMSB4X,0.684,NFATC4,0.01,
+7,LAMA4,0.013,7,TP53,0.016,COL1A1,1,NFATC4,0.01,
+7,LAMA4,0.013,7,TP53,0.016,SFTPB,0.01,RARA,1,
+7,THBS1,0.016,7,VEGFA,0.299,TMSB4X,0.684,NFATC4,0.01,
+7,THBS1,0.016,7,VEGFA,0.299,COL1A1,1,NFATC4,0.01,
+7,THBS1,0.016,7,VEGFA,0.299,SFTPB,0.01,RARA,1,
+7,THBS1,0.016,7,VEGFA,0.299,FN1,0.111,MECOM,0.191,
+7,FN1,0.646,7,VHL,0.013,FN1,0.111,MECOM,0.191,
+7,FN1,0.646,7,VHL,0.013,SFTPB,0.01,RARA,1,
+7,FN1,0.646,7,VHL,0.013,COL1A1,1,NFATC4,0.01,
+7,FN1,0.646,7,VHL,0.013,TMSB4X,0.684,NFATC4,0.01,
+9,FN1,0.557,9,CCN2,0.029,COL1A1,0.01,NFATC4,0.01,
+9,FN1,0.557,9,CCN2,0.029,COL3A1,1,NFIX,1,
+9,LAMC2,0.01,9,CD151,0.033,COL3A1,1,NFIX,1,
+9,LAMC2,0.01,9,CD151,0.033,COL1A1,0.01,NFATC4,0.01,
+9,COL6A3,0.214,9,CD44,0.164,COL1A1,0.01,NFATC4,0.01,
+9,COL4A1,0.056,9,CD44,0.164,COL1A1,0.01,NFATC4,0.01,
+9,LAMA5,0.015,9,CD44,0.164,COL1A1,0.01,NFATC4,0.01,
+9,LAMC1,0.017,9,CD44,0.164,COL3A1,1,NFIX,1,
+9,COL6A3,0.214,9,CD44,0.164,COL3A1,1,NFIX,1,
+9,COL1A1,1,9,CD44,0.164,COL1A1,0.01,NFATC4,0.01,
+9,FN1,0.557,9,CD44,0.164,COL3A1,1,NFIX,1,
+9,LAMA5,0.015,9,CD44,0.164,COL3A1,1,NFIX,1,
+9,LAMC2,0.01,9,CD44,0.164,COL1A1,0.01,NFATC4,0.01,
+9,COL1A1,1,9,CD44,0.164,COL3A1,1,NFIX,1,
+9,COL4A1,0.056,9,CD44,0.164,COL3A1,1,NFIX,1,
+9,LAMC2,0.01,9,CD44,0.164,COL3A1,1,NFIX,1,
+9,LAMC1,0.017,9,CD44,0.164,COL1A1,0.01,NFATC4,0.01,
+9,FN1,0.557,9,CD44,0.164,COL1A1,0.01,NFATC4,0.01,
+9,THBS1,0.026,9,CD47,0.039,COL1A1,0.01,NFATC4,0.01,
+9,THBS1,0.026,9,CD47,0.039,COL3A1,1,NFIX,1,
+9,FN1,0.557,9,DDR1,0.019,COL1A1,0.01,NFATC4,0.01,
+9,FN1,0.557,9,DDR1,0.019,COL3A1,1,NFIX,1,
+9,COL1A1,1,9,DDR1,0.019,COL3A1,1,NFIX,1,
+9,COL1A1,1,9,DDR1,0.019,COL1A1,0.01,NFATC4,0.01,
+9,FN1,0.557,9,FN1,1,COL3A1,1,NFIX,1,
+9,FN1,0.557,9,FN1,1,COL1A1,0.01,NFATC4,0.01,
+9,CCN2,0.02,9,FN1,1,COL3A1,1,NFIX,1,
+9,CCN2,0.02,9,FN1,1,COL1A1,0.01,NFATC4,0.01,
+9,FN1,0.557,9,IGF2R,0.016,COL3A1,1,NFIX,1,
+9,FN1,0.557,9,IGF2R,0.016,COL1A1,0.01,NFATC4,0.01,
+9,LAMC1,0.017,9,ITGA1,0.021,COL3A1,1,NFIX,1,a1b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGA1,0.021,COL1A1,0.01,NFATC4,0.01,a1b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGA1,0.021,COL3A1,1,NFIX,1,a1b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGA1,0.021,COL1A1,0.01,NFATC4,0.01,a1b1 complex is enriched in the population
+9,COL1A1,1,9,ITGA1,0.021,COL3A1,1,NFIX,1,a1b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGA1,0.021,COL1A1,0.01,NFATC4,0.01,a1b1 complex is enriched in the population
+9,COL1A1,1,9,ITGA1,0.021,COL1A1,0.01,NFATC4,0.01,a1b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGA1,0.021,COL1A1,0.01,NFATC4,0.01,a1b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGA1,0.021,COL1A1,0.01,NFATC4,0.01,a1b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGA1,0.021,COL1A1,0.01,NFATC4,0.01,a1b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGA1,0.021,COL3A1,1,NFIX,1,a1b1 complex is enriched in the population
+9,FN1,0.557,9,ITGA1,0.021,COL1A1,0.01,NFATC4,0.01,a1b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGA1,0.021,COL3A1,1,NFIX,1,a1b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGA1,0.021,COL3A1,1,NFIX,1,a1b1 complex is enriched in the population
+9,FN1,0.557,9,ITGA1,0.021,COL3A1,1,NFIX,1,a1b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGA1,0.021,COL3A1,1,NFIX,1,a1b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGA11,0.014,COL3A1,1,NFIX,1,a11b1 complex is enriched in the population
+9,COL1A1,1,9,ITGA11,0.014,COL1A1,0.01,NFATC4,0.01,a11b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGA11,0.014,COL1A1,0.01,NFATC4,0.01,a11b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGA11,0.014,COL3A1,1,NFIX,1,a11b1 complex is enriched in the population
+9,FN1,0.557,9,ITGA11,0.014,COL3A1,1,NFIX,1,a11b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGA11,0.014,COL1A1,0.01,NFATC4,0.01,a11b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGA11,0.014,COL3A1,1,NFIX,1,a11b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGA11,0.014,COL1A1,0.01,NFATC4,0.01,a11b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGA11,0.014,COL3A1,1,NFIX,1,a11b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGA11,0.014,COL1A1,0.01,NFATC4,0.01,a11b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGA11,0.014,COL3A1,1,NFIX,1,a11b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGA11,0.014,COL1A1,0.01,NFATC4,0.01,a11b1 complex is enriched in the population
+9,FN1,0.557,9,ITGA11,0.014,COL1A1,0.01,NFATC4,0.01,a11b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGA11,0.014,COL3A1,1,NFIX,1,a11b1 complex is enriched in the population
+9,COL1A1,1,9,ITGA11,0.014,COL3A1,1,NFIX,1,a11b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGA11,0.014,COL1A1,0.01,NFATC4,0.01,a11b1 complex is enriched in the population
+9,COL1A1,1,9,ITGA2,0.014,COL3A1,1,NFIX,1,a2b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGA2,0.014,COL1A1,0.01,NFATC4,0.01,a2b1 complex is enriched in the population
+9,FN1,0.557,9,ITGA2,0.014,COL1A1,0.01,NFATC4,0.01,a2b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGA2,0.014,COL3A1,1,NFIX,1,a2b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGA2,0.014,COL1A1,0.01,NFATC4,0.01,a2b1 complex is enriched in the population
+9,FN1,0.557,9,ITGA2,0.014,COL3A1,1,NFIX,1,a2b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGA2,0.014,COL3A1,1,NFIX,1,a2b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGA2,0.014,COL1A1,0.01,NFATC4,0.01,a2b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGA2,0.014,COL3A1,1,NFIX,1,a2b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGA2,0.014,COL3A1,1,NFIX,1,a2b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGA2,0.014,COL1A1,0.01,NFATC4,0.01,a2b1 complex is enriched in the population
+9,COL1A1,1,9,ITGA2,0.014,COL1A1,0.01,NFATC4,0.01,a2b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGA2,0.014,COL1A1,0.01,NFATC4,0.01,a2b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGA2,0.014,COL3A1,1,NFIX,1,a2b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGA2,0.014,COL3A1,1,NFIX,1,a2b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGA2,0.014,COL1A1,0.01,NFATC4,0.01,a2b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGA5,0.013,COL1A1,0.01,NFATC4,0.01,a5b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGA5,0.013,COL1A1,0.01,NFATC4,0.01,a5b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGA5,0.013,COL3A1,1,NFIX,1,a5b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGA5,0.013,COL1A1,0.01,NFATC4,0.01,a5b1 complex is enriched in the population
+9,COL1A1,1,9,ITGA5,0.013,COL3A1,1,NFIX,1,a5b1 complex is enriched in the population
+9,COL1A1,1,9,ITGA5,0.013,COL1A1,0.01,NFATC4,0.01,a5b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGA5,0.013,COL1A1,0.01,NFATC4,0.01,a5b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGA5,0.013,COL1A1,0.01,NFATC4,0.01,a5b1 complex is enriched in the population
+9,FN1,0.557,9,ITGA5,0.013,COL3A1,1,NFIX,1,a5b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGA5,0.013,COL3A1,1,NFIX,1,a5b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGA5,0.013,COL3A1,1,NFIX,1,a5b1 complex is enriched in the population
+9,CCN2,0.02,9,ITGA5,0.013,COL1A1,0.01,NFATC4,0.01,a5b1 complex is enriched in the population
+9,CCN2,0.02,9,ITGA5,0.013,COL3A1,1,NFIX,1,a5b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGA5,0.013,COL3A1,1,NFIX,1,a5b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGA5,0.013,COL3A1,1,NFIX,1,a5b1 complex is enriched in the population
+9,FN1,0.557,9,ITGA5,0.013,COL1A1,0.01,NFATC4,0.01,a5b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGA5,0.013,COL1A1,0.01,NFATC4,0.01,a5b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGA5,0.013,COL3A1,1,NFIX,1,a5b1 complex is enriched in the population
+9,FN1,0.557,9,ITGA6,0.013,COL3A1,1,NFIX,1,a6b1 complex is enriched in the population
+9,FN1,0.557,9,ITGA6,0.013,COL3A1,1,NFIX,1,a6b4 complex is enriched in the population
+9,LAMC1,0.017,9,ITGA6,0.013,COL3A1,1,NFIX,1,a6b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGA6,0.013,COL3A1,1,NFIX,1,a6b4 complex is enriched in the population
+9,LAMA5,0.015,9,ITGA6,0.013,COL3A1,1,NFIX,1,a6b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGA6,0.013,COL3A1,1,NFIX,1,a6b4 complex is enriched in the population
+9,COL6A3,0.214,9,ITGA6,0.013,COL3A1,1,NFIX,1,a6b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGA6,0.013,COL3A1,1,NFIX,1,a6b4 complex is enriched in the population
+9,COL4A1,0.056,9,ITGA6,0.013,COL3A1,1,NFIX,1,a6b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGA6,0.013,COL3A1,1,NFIX,1,a6b4 complex is enriched in the population
+9,COL6A3,0.214,9,ITGA6,0.013,COL1A1,0.01,NFATC4,0.01,a6b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGA6,0.013,COL1A1,0.01,NFATC4,0.01,a6b4 complex is enriched in the population
+9,COL1A1,1,9,ITGA6,0.013,COL3A1,1,NFIX,1,a6b1 complex is enriched in the population
+9,COL1A1,1,9,ITGA6,0.013,COL3A1,1,NFIX,1,a6b4 complex is enriched in the population
+9,THBS1,0.026,9,ITGA6,0.013,COL1A1,0.01,NFATC4,0.01,a6b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGA6,0.013,COL1A1,0.01,NFATC4,0.01,a6b4 complex is enriched in the population
+9,FN1,0.557,9,ITGA6,0.013,COL1A1,0.01,NFATC4,0.01,a6b1 complex is enriched in the population
+9,FN1,0.557,9,ITGA6,0.013,COL1A1,0.01,NFATC4,0.01,a6b4 complex is enriched in the population
+9,LAMA5,0.015,9,ITGA6,0.013,COL1A1,0.01,NFATC4,0.01,a6b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGA6,0.013,COL1A1,0.01,NFATC4,0.01,a6b4 complex is enriched in the population
+9,THBS1,0.026,9,ITGA6,0.013,COL3A1,1,NFIX,1,a6b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGA6,0.013,COL3A1,1,NFIX,1,a6b4 complex is enriched in the population
+9,LAMC1,0.017,9,ITGA6,0.013,COL1A1,0.01,NFATC4,0.01,a6b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGA6,0.013,COL1A1,0.01,NFATC4,0.01,a6b4 complex is enriched in the population
+9,COL1A1,1,9,ITGA6,0.013,COL1A1,0.01,NFATC4,0.01,a6b1 complex is enriched in the population
+9,COL1A1,1,9,ITGA6,0.013,COL1A1,0.01,NFATC4,0.01,a6b4 complex is enriched in the population
+9,LAMC2,0.01,9,ITGA6,0.013,COL3A1,1,NFIX,1,a6b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGA6,0.013,COL3A1,1,NFIX,1,a6b4 complex is enriched in the population
+9,COL4A1,0.056,9,ITGA6,0.013,COL1A1,0.01,NFATC4,0.01,a6b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGA6,0.013,COL1A1,0.01,NFATC4,0.01,a6b4 complex is enriched in the population
+9,LAMC2,0.01,9,ITGA6,0.013,COL1A1,0.01,NFATC4,0.01,a6b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGA6,0.013,COL1A1,0.01,NFATC4,0.01,a6b4 complex is enriched in the population
+9,FN1,0.557,9,ITGA9,0.01,COL1A1,0.01,NFATC4,0.01,a9b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGA9,0.01,COL3A1,1,NFIX,1,a9b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGA9,0.01,COL1A1,0.01,NFATC4,0.01,a9b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGA9,0.01,COL1A1,0.01,NFATC4,0.01,a9b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGA9,0.01,COL3A1,1,NFIX,1,a9b1 complex is enriched in the population
+9,COL1A1,1,9,ITGA9,0.01,COL1A1,0.01,NFATC4,0.01,a9b1 complex is enriched in the population
+9,FN1,0.557,9,ITGA9,0.01,COL3A1,1,NFIX,1,a9b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGA9,0.01,COL1A1,0.01,NFATC4,0.01,a9b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGA9,0.01,COL3A1,1,NFIX,1,a9b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGA9,0.01,COL3A1,1,NFIX,1,a9b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGA9,0.01,COL1A1,0.01,NFATC4,0.01,a9b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGA9,0.01,COL1A1,0.01,NFATC4,0.01,a9b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGA9,0.01,COL3A1,1,NFIX,1,a9b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGA9,0.01,COL1A1,0.01,NFATC4,0.01,a9b1 complex is enriched in the population
+9,COL1A1,1,9,ITGA9,0.01,COL3A1,1,NFIX,1,a9b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGA9,0.01,COL3A1,1,NFIX,1,a9b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGAM,0.019,COL1A1,0.01,NFATC4,0.01,
+9,THBS1,0.026,9,ITGAM,0.019,COL3A1,1,NFIX,1,
+9,LAMC1,0.017,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb6 complex is enriched in the population
+9,LAMC1,0.017,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb5 complex is enriched in the population
+9,LAMA5,0.015,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb6 complex is enriched in the population
+9,LAMA5,0.015,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb5 complex is enriched in the population
+9,LAMC2,0.01,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb6 complex is enriched in the population
+9,LAMC2,0.01,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb5 complex is enriched in the population
+9,LAMC1,0.017,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb6 complex is enriched in the population
+9,LAMC1,0.017,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb5 complex is enriched in the population
+9,COL4A1,0.056,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb6 complex is enriched in the population
+9,COL4A1,0.056,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb5 complex is enriched in the population
+9,LAMC2,0.01,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb6 complex is enriched in the population
+9,LAMC2,0.01,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb5 complex is enriched in the population
+9,LAMA5,0.015,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb6 complex is enriched in the population
+9,LAMA5,0.015,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb5 complex is enriched in the population
+9,COL6A3,0.214,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb6 complex is enriched in the population
+9,COL6A3,0.214,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb5 complex is enriched in the population
+9,COL1A1,1,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb6 complex is enriched in the population
+9,COL1A1,1,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb1 complex is enriched in the population
+9,COL1A1,1,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb5 complex is enriched in the population
+9,FN1,0.557,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb6 complex is enriched in the population
+9,FN1,0.557,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb1 complex is enriched in the population
+9,FN1,0.557,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb5 complex is enriched in the population
+9,COL1A1,1,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb6 complex is enriched in the population
+9,COL1A1,1,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb1 complex is enriched in the population
+9,COL1A1,1,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb5 complex is enriched in the population
+9,COL4A1,0.056,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb6 complex is enriched in the population
+9,COL4A1,0.056,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb5 complex is enriched in the population
+9,THBS1,0.026,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb6 complex is enriched in the population
+9,THBS1,0.026,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb1 complex is enriched in the population
+9,THBS1,0.026,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb5 complex is enriched in the population
+9,THBS1,0.026,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb6 complex is enriched in the population
+9,THBS1,0.026,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb1 complex is enriched in the population
+9,THBS1,0.026,9,ITGAV,0.023,COL1A1,0.01,NFATC4,0.01,aVb5 complex is enriched in the population
+9,COL6A3,0.214,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb6 complex is enriched in the population
+9,COL6A3,0.214,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb5 complex is enriched in the population
+9,FN1,0.557,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb6 complex is enriched in the population
+9,FN1,0.557,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb1 complex is enriched in the population
+9,FN1,0.557,9,ITGAV,0.023,COL3A1,1,NFIX,1,aVb5 complex is enriched in the population
+9,THBS1,0.026,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a5b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a1b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,aVb1 complex is enriched in the population
+9,THBS1,0.026,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a6b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a2b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a9b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a11b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB1,0.056,COL3A1,1,NFIX,1,a5b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB1,0.056,COL3A1,1,NFIX,1,a1b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB1,0.056,COL3A1,1,NFIX,1,aVb1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB1,0.056,COL3A1,1,NFIX,1,a6b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB1,0.056,COL3A1,1,NFIX,1,a2b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB1,0.056,COL3A1,1,NFIX,1,a9b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB1,0.056,COL3A1,1,NFIX,1,a11b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a5b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a1b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,aVb1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a6b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a2b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a9b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a11b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB1,0.056,COL3A1,1,NFIX,1,a5b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB1,0.056,COL3A1,1,NFIX,1,a1b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB1,0.056,COL3A1,1,NFIX,1,aVb1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB1,0.056,COL3A1,1,NFIX,1,a6b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB1,0.056,COL3A1,1,NFIX,1,a2b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB1,0.056,COL3A1,1,NFIX,1,a9b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB1,0.056,COL3A1,1,NFIX,1,a11b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB1,0.056,COL3A1,1,NFIX,1,a5b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB1,0.056,COL3A1,1,NFIX,1,a1b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB1,0.056,COL3A1,1,NFIX,1,aVb1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB1,0.056,COL3A1,1,NFIX,1,a6b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB1,0.056,COL3A1,1,NFIX,1,a2b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB1,0.056,COL3A1,1,NFIX,1,a9b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB1,0.056,COL3A1,1,NFIX,1,a11b1 complex is enriched in the population
+9,FN1,0.557,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a5b1 complex is enriched in the population
+9,FN1,0.557,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a1b1 complex is enriched in the population
+9,FN1,0.557,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,aVb1 complex is enriched in the population
+9,FN1,0.557,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a6b1 complex is enriched in the population
+9,FN1,0.557,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a2b1 complex is enriched in the population
+9,FN1,0.557,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a9b1 complex is enriched in the population
+9,FN1,0.557,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a11b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a5b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a1b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,aVb1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a6b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a2b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a9b1 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a11b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a5b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a1b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,aVb1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a6b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a2b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a9b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a11b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGB1,0.056,COL3A1,1,NFIX,1,a5b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGB1,0.056,COL3A1,1,NFIX,1,a1b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGB1,0.056,COL3A1,1,NFIX,1,aVb1 complex is enriched in the population
+9,THBS1,0.026,9,ITGB1,0.056,COL3A1,1,NFIX,1,a6b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGB1,0.056,COL3A1,1,NFIX,1,a2b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGB1,0.056,COL3A1,1,NFIX,1,a9b1 complex is enriched in the population
+9,THBS1,0.026,9,ITGB1,0.056,COL3A1,1,NFIX,1,a11b1 complex is enriched in the population
+9,FN1,0.557,9,ITGB1,0.056,COL3A1,1,NFIX,1,a5b1 complex is enriched in the population
+9,FN1,0.557,9,ITGB1,0.056,COL3A1,1,NFIX,1,a1b1 complex is enriched in the population
+9,FN1,0.557,9,ITGB1,0.056,COL3A1,1,NFIX,1,aVb1 complex is enriched in the population
+9,FN1,0.557,9,ITGB1,0.056,COL3A1,1,NFIX,1,a6b1 complex is enriched in the population
+9,FN1,0.557,9,ITGB1,0.056,COL3A1,1,NFIX,1,a2b1 complex is enriched in the population
+9,FN1,0.557,9,ITGB1,0.056,COL3A1,1,NFIX,1,a9b1 complex is enriched in the population
+9,FN1,0.557,9,ITGB1,0.056,COL3A1,1,NFIX,1,a11b1 complex is enriched in the population
+9,COL1A1,1,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a5b1 complex is enriched in the population
+9,COL1A1,1,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a1b1 complex is enriched in the population
+9,COL1A1,1,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,aVb1 complex is enriched in the population
+9,COL1A1,1,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a6b1 complex is enriched in the population
+9,COL1A1,1,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a2b1 complex is enriched in the population
+9,COL1A1,1,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a9b1 complex is enriched in the population
+9,COL1A1,1,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a11b1 complex is enriched in the population
+9,COL1A1,1,9,ITGB1,0.056,COL3A1,1,NFIX,1,a5b1 complex is enriched in the population
+9,COL1A1,1,9,ITGB1,0.056,COL3A1,1,NFIX,1,a1b1 complex is enriched in the population
+9,COL1A1,1,9,ITGB1,0.056,COL3A1,1,NFIX,1,aVb1 complex is enriched in the population
+9,COL1A1,1,9,ITGB1,0.056,COL3A1,1,NFIX,1,a6b1 complex is enriched in the population
+9,COL1A1,1,9,ITGB1,0.056,COL3A1,1,NFIX,1,a2b1 complex is enriched in the population
+9,COL1A1,1,9,ITGB1,0.056,COL3A1,1,NFIX,1,a9b1 complex is enriched in the population
+9,COL1A1,1,9,ITGB1,0.056,COL3A1,1,NFIX,1,a11b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a5b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a1b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,aVb1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a6b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a2b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a9b1 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a11b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB1,0.056,COL3A1,1,NFIX,1,a5b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB1,0.056,COL3A1,1,NFIX,1,a1b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB1,0.056,COL3A1,1,NFIX,1,aVb1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB1,0.056,COL3A1,1,NFIX,1,a6b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB1,0.056,COL3A1,1,NFIX,1,a2b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB1,0.056,COL3A1,1,NFIX,1,a9b1 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB1,0.056,COL3A1,1,NFIX,1,a11b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a5b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a1b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,aVb1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a6b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a2b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a9b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB1,0.056,COL1A1,0.01,NFATC4,0.01,a11b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB1,0.056,COL3A1,1,NFIX,1,a5b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB1,0.056,COL3A1,1,NFIX,1,a1b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB1,0.056,COL3A1,1,NFIX,1,aVb1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB1,0.056,COL3A1,1,NFIX,1,a6b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB1,0.056,COL3A1,1,NFIX,1,a2b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB1,0.056,COL3A1,1,NFIX,1,a9b1 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB1,0.056,COL3A1,1,NFIX,1,a11b1 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB4,0.012,COL1A1,0.01,NFATC4,0.01,a6b4 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB4,0.012,COL1A1,0.01,NFATC4,0.01,a6b4 complex is enriched in the population
+9,THBS1,0.026,9,ITGB4,0.012,COL1A1,0.01,NFATC4,0.01,a6b4 complex is enriched in the population
+9,FN1,0.557,9,ITGB4,0.012,COL1A1,0.01,NFATC4,0.01,a6b4 complex is enriched in the population
+9,COL1A1,1,9,ITGB4,0.012,COL1A1,0.01,NFATC4,0.01,a6b4 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB4,0.012,COL3A1,1,NFIX,1,a6b4 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB4,0.012,COL3A1,1,NFIX,1,a6b4 complex is enriched in the population
+9,THBS1,0.026,9,ITGB4,0.012,COL3A1,1,NFIX,1,a6b4 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB4,0.012,COL3A1,1,NFIX,1,a6b4 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB4,0.012,COL1A1,0.01,NFATC4,0.01,a6b4 complex is enriched in the population
+9,COL1A1,1,9,ITGB4,0.012,COL3A1,1,NFIX,1,a6b4 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB4,0.012,COL3A1,1,NFIX,1,a6b4 complex is enriched in the population
+9,FN1,0.557,9,ITGB4,0.012,COL3A1,1,NFIX,1,a6b4 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB4,0.012,COL1A1,0.01,NFATC4,0.01,a6b4 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB4,0.012,COL1A1,0.01,NFATC4,0.01,a6b4 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB4,0.012,COL3A1,1,NFIX,1,a6b4 complex is enriched in the population
+9,COL1A1,1,9,ITGB5,0.033,COL3A1,1,NFIX,1,aVb5 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB5,0.033,COL3A1,1,NFIX,1,aVb5 complex is enriched in the population
+9,FN1,0.557,9,ITGB5,0.033,COL3A1,1,NFIX,1,aVb5 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB5,0.033,COL3A1,1,NFIX,1,aVb5 complex is enriched in the population
+9,FN1,0.557,9,ITGB5,0.033,COL1A1,0.01,NFATC4,0.01,aVb5 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB5,0.033,COL3A1,1,NFIX,1,aVb5 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB5,0.033,COL1A1,0.01,NFATC4,0.01,aVb5 complex is enriched in the population
+9,THBS1,0.026,9,ITGB5,0.033,COL1A1,0.01,NFATC4,0.01,aVb5 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB5,0.033,COL3A1,1,NFIX,1,aVb5 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB5,0.033,COL1A1,0.01,NFATC4,0.01,aVb5 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB5,0.033,COL1A1,0.01,NFATC4,0.01,aVb5 complex is enriched in the population
+9,THBS1,0.026,9,ITGB5,0.033,COL3A1,1,NFIX,1,aVb5 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB5,0.033,COL1A1,0.01,NFATC4,0.01,aVb5 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB5,0.033,COL3A1,1,NFIX,1,aVb5 complex is enriched in the population
+9,COL1A1,1,9,ITGB5,0.033,COL1A1,0.01,NFATC4,0.01,aVb5 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB5,0.033,COL1A1,0.01,NFATC4,0.01,aVb5 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB6,0.02,COL3A1,1,NFIX,1,aVb6 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB6,0.02,COL3A1,1,NFIX,1,aVb6 complex is enriched in the population
+9,THBS1,0.026,9,ITGB6,0.02,COL3A1,1,NFIX,1,aVb6 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB6,0.02,COL1A1,0.01,NFATC4,0.01,aVb6 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB6,0.02,COL3A1,1,NFIX,1,aVb6 complex is enriched in the population
+9,LAMA5,0.015,9,ITGB6,0.02,COL1A1,0.01,NFATC4,0.01,aVb6 complex is enriched in the population
+9,FN1,0.557,9,ITGB6,0.02,COL1A1,0.01,NFATC4,0.01,aVb6 complex is enriched in the population
+9,COL1A1,1,9,ITGB6,0.02,COL3A1,1,NFIX,1,aVb6 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB6,0.02,COL3A1,1,NFIX,1,aVb6 complex is enriched in the population
+9,COL4A1,0.056,9,ITGB6,0.02,COL1A1,0.01,NFATC4,0.01,aVb6 complex is enriched in the population
+9,FN1,0.557,9,ITGB6,0.02,COL3A1,1,NFIX,1,aVb6 complex is enriched in the population
+9,LAMC1,0.017,9,ITGB6,0.02,COL3A1,1,NFIX,1,aVb6 complex is enriched in the population
+9,COL1A1,1,9,ITGB6,0.02,COL1A1,0.01,NFATC4,0.01,aVb6 complex is enriched in the population
+9,COL6A3,0.214,9,ITGB6,0.02,COL1A1,0.01,NFATC4,0.01,aVb6 complex is enriched in the population
+9,LAMC2,0.01,9,ITGB6,0.02,COL1A1,0.01,NFATC4,0.01,aVb6 complex is enriched in the population
+9,THBS1,0.026,9,ITGB6,0.02,COL1A1,0.01,NFATC4,0.01,aVb6 complex is enriched in the population
+9,LAMA5,0.015,9,LAMC1,0.024,COL1A1,0.01,NFATC4,0.01,
+9,LAMA5,0.015,9,LAMC1,0.024,COL3A1,1,NFIX,1,
+9,THBS1,0.026,9,LRP1,0.069,COL1A1,0.01,NFATC4,0.01,
+9,THBS1,0.026,9,LRP1,0.069,COL3A1,1,NFIX,1,
+9,COL6A3,0.214,9,PDIA3,0.015,COL1A1,0.01,NFATC4,0.01,
+9,LAMC1,0.017,9,PDIA3,0.015,COL3A1,1,NFIX,1,
+9,LAMC2,0.01,9,PDIA3,0.015,COL3A1,1,NFIX,1,
+9,LAMC2,0.01,9,PDIA3,0.015,COL1A1,0.01,NFATC4,0.01,
+9,LAMC1,0.017,9,PDIA3,0.015,COL1A1,0.01,NFATC4,0.01,
+9,COL6A3,0.214,9,PDIA3,0.015,COL3A1,1,NFIX,1,
+9,THBS1,0.026,9,SDC1,0.051,COL1A1,0.01,NFATC4,0.01,
+9,COL4A1,0.056,9,SDC1,0.051,COL1A1,0.01,NFATC4,0.01,
+9,COL1A1,1,9,SDC1,0.051,COL1A1,0.01,NFATC4,0.01,
+9,COL1A1,1,9,SDC1,0.051,COL3A1,1,NFIX,1,
+9,COL6A3,0.214,9,SDC1,0.051,COL1A1,0.01,NFATC4,0.01,
+9,THBS1,0.026,9,SDC1,0.051,COL3A1,1,NFIX,1,
+9,FN1,0.557,9,SDC1,0.051,COL3A1,1,NFIX,1,
+9,COL6A3,0.214,9,SDC1,0.051,COL3A1,1,NFIX,1,
+9,COL4A1,0.056,9,SDC1,0.051,COL3A1,1,NFIX,1,
+9,FN1,0.557,9,SDC1,0.051,COL1A1,0.01,NFATC4,0.01,
+9,FN1,0.557,9,SDC2,0.018,COL3A1,1,NFIX,1,
+9,FN1,0.557,9,SDC2,0.018,COL1A1,0.01,NFATC4,0.01,
+9,COL4A1,0.056,9,SDC4,0.027,COL1A1,0.01,NFATC4,0.01,
+9,COL1A1,1,9,SDC4,0.027,COL3A1,1,NFIX,1,
+9,THBS1,0.026,9,SDC4,0.027,COL3A1,1,NFIX,1,
+9,FN1,0.557,9,SDC4,0.027,COL1A1,0.01,NFATC4,0.01,
+9,COL4A1,0.056,9,SDC4,0.027,COL3A1,1,NFIX,1,
+9,THBS1,0.026,9,SDC4,0.027,COL1A1,0.01,NFATC4,0.01,
+9,COL6A3,0.214,9,SDC4,0.027,COL1A1,0.01,NFATC4,0.01,
+9,FN1,0.557,9,SDC4,0.027,COL3A1,1,NFIX,1,
+9,COL1A1,1,9,SDC4,0.027,COL1A1,0.01,NFATC4,0.01,
+9,COL6A3,0.214,9,SDC4,0.027,COL3A1,1,NFIX,1,
+9,FN1,0.557,9,TFRC,0.165,COL1A1,0.01,NFATC4,0.01,
+9,FN1,0.557,9,TFRC,0.165,COL3A1,1,NFIX,1,
+9,THBS1,0.026,9,VEGFA,0.091,COL1A1,0.01,NFATC4,0.01,
+9,THBS1,0.026,9,VEGFA,0.091,COL3A1,1,NFIX,1,
+9,FN1,0.557,9,VHL,0.022,COL3A1,1,NFIX,1,
+9,FN1,0.557,9,VHL,0.022,COL1A1,0.01,NFATC4,0.01,

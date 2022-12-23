@@ -1601,6 +1601,19 @@ matricom.spatial <- function(seurat.obj=NULL,
         annofin[[i]] <- bind_rows(l)
       }
       annofin <- bind_rows(annofin)
+
+      if(nrow(annofin)<1){
+        cat(crayon::red("no ligand path was found, execution stops \n"))
+        cat(crayon::red("try changing the min.pct or the expr.filter parameter \n"))
+        stop()
+      }
+
+      if(nrow(fin)<1){
+        cat(crayon::red("no ligand path was found, execution stops \n"))
+        cat(crayon::red("try changing the min.pct or the expr.filter parameter \n"))
+        stop()
+      }
+
       fin <- distinct(merge(fin,annofin,by=c("receiving.population","ECM.receptor"),all=T))
       fin[is.na(fin)] <- ""
       fin <- fin[,c(3:5,1,2,6:ncol(fin))]

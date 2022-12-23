@@ -1,0 +1,16 @@
+Package: matRicom
+Type: Package
+Title: Cell-ECM communication in scRNAseq
+Version: 1.0.1
+Author: IzziLab
+Maintainer: IzziLab <valerio.izzi@oulu.fi>
+Description: Identify ligand/receptor/target gene triplets in scRNAseq, focusing on cell-ECM interactions.
+License: GPL (>=3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Depends: R (>= 3.5.0)
+Imports:
+        dplyr,data.table,crayon,Seurat,nichenetr,purrr,ggplot2,ggalluvial,webr,glmnet,scales,igraph,visNetwork,Matrix
+NeedsCompilation: no
+Packaged: 2022-12-19 16:32:45 UTC; Val

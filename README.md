@@ -173,6 +173,7 @@ Running `matricom` will list the progress through the individual steps of the pi
 (9/9) scaling the results to [0,1] and annotating... done
 ```
 ```mermaid
+%%{init: {'theme': 'neutral' } }%%
 flowchart LR
 
 %% complicated figure like this needs colours
@@ -228,6 +229,7 @@ udp(upreg. diff. types) -. create -.- 5
 - [Supplemental 1_matRicom_database prep script.R](./supp.scripts/Supplemental%201_matRicom_database%20prep%20script.R): Network creation script (Figure 3).
 
 ```mermaid
+%%{init: {'theme': 'neutral' } }%%
 flowchart TB
 %% categories
 style mtc fill: #FCE4FA, stroke:#F1F1F0

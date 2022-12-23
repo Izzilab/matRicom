@@ -82,6 +82,7 @@ The workflow (Figure 1) has 3 automated steps for the user to carry out:
 * matRicom is designed for data from _Homo sapiens_. To try it with other species (such usage is discouraged), option `dirty.trick = T` should be passed to `make.object(.spatial)`; it simply puts gene names to uppercase (hence the name).
  
 ```mermaid
+%%{init: {'theme': 'normal' } }%%
 flowchart LR
 style 10 fill: #FCF4E4, stroke:#F1F1F0
 style rd fill: #FCF4E4, stroke:#F1F1F0

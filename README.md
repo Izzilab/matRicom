@@ -57,24 +57,27 @@ library("hdf5r") # for spatial data
 library("matRicom")
 ```
 ## Functions provided by the package
-The matRicom R package provides the following funtions (given in relative order of typical usage):
-* `make.object`: a wrapper around the [Seurat workflow](https://satijalab.org/seurat/articles/pbmc3k_tutorial.html) to prepare 10X data for `matricom`
-* `make.object.spatial`: a wrapper around the [spatial datasets with Seurat](https://satijalab.org/seurat/archive/v3.2/spatial_vignette.html) to prepare 10X_Spatial data for `matricom.spatial`
-* `filter.finder:` a graphical utility to explore filters (`exp.filter` and `min.pct`) for matRicom
-* **`matricom`**: cell-ECM communications in scRNAseq data
-* `matricom.spatial`: cell-ECM communications in Spatial RNAseq data
-* `flowgraph`: representing cell-ECM communications with alluvials
-* `annograph`: matrisome annotations with nested pie charts
-* `netgraph`: representing cell-ECM communications with networks, focusing on intracellular paths
-* `compgraph`: representing differential cell-ECM communications with alluvials
-* `spatplot`: representing cell-ECM communication in spatial RNAseq data
+The matRicom R package provides the following funtions (given in the relative order of their typical usage):
+1. Preparation
+   * `make.object`: a wrapper around the [Seurat workflow](https://satijalab.org/seurat/articles/pbmc3k_tutorial.html) to prepare 10X data for `matricom`
+   * `make.object.spatial`: a wrapper around the [spatial datasets with Seurat](https://satijalab.org/seurat/archive/v3.2/spatial_vignette.html) to prepare 10X_Spatial data for `matricom.spatial`
+   * `filter.finder:` a graphical utility to explore filters (such as `exp.filter` and `min.pct`) for matRicom
+2. Main function
+   * **`matricom`**: cell-ECM communications in scRNAseq data
+   * `matricom.spatial`: cell-ECM communications in Spatial RNAseq data
+3. Post-run analyses
+   * `flowgraph`: representing cell-ECM communications with alluvials
+   * `annograph`: matrisome annotations with nested pie charts
+   * `netgraph`: representing cell-ECM communications with networks, focusing on intracellular paths
+   * `compgraph`: representing differential cell-ECM communications with alluvials
+   * `spatplot`: representing cell-ECM communication in spatial RNAseq data
 
 ## Example usage
 The workflow (Figure 1) has 3 automated steps for the user to carry out:
 1. Input data should be prepared as a Seaurat object. For 10xGenomics data, this can be done automatically by `make.object`.
    - (optional) Explore your data by `filter.finder` if you want to set custom filtering in the next step.
-2. The prepared data and a defined group column (to serve as identity factor) are then passed to `matricom`.
-3. Results can be visualised by several functions: `flowgraph`, `compgraph`, `netgraph` and `spatplot`.
+2. The prepared data and a defined group column (to serve as identity factor) are then passed to `matricom`, the main function of the package.
+3. Results can be analyzed and visualised by several functions: `flowgraph`, `compgraph`, `netgraph` and `spatplot`.
 
 *Notes*
 * For Spatial datasets, use `make.object.spatial` and `matricom.spatial`, instead.  

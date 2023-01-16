@@ -1,7 +1,7 @@
 # matRicom: a R package to study cell-extracellular matrix communication in single-cell RNA-seq data.
 
 * Author and maintainer: IzziLab (<valerio.izzi@oulu.fi>)
-* Application note: doi: 
+* Application note: doi: *pending*
 * Supplementary data:
 
 ## Abstract

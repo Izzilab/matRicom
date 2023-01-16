@@ -1,7 +1,0 @@
-origin.population,ECM.component,ECM.value,receiving.population,ECM.receptor,receptor.value,target.gene,target.value,TF,TF.value,annotation
-0,SRGN,0.505,0,GZMB,0.505,EEF1A1,0.255,HMGN3,0.01,
-0,SRGN,0.505,0,GZMB,0.505,MT-CO3,0.372,ZBTB38,1,
-0,SRGN,0.505,0,GZMB,0.505,RPL10,0.94,THAP7,0.197,
-0,SRGN,0.505,0,GZMB,0.505,RPS18,1,THAP4,0.259,
-0,SRGN,0.505,0,GZMB,0.505,RPS27A,0.01,RREB1,0.092,
-0,SRGN,0.505,0,GZMB,0.505,TPT1,0.883,ZNF581,0.245,

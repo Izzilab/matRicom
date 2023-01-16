@@ -2,7 +2,7 @@
 
 * Author and maintainer: IzziLab (<valerio.izzi@oulu.fi>)
 * Application note: doi: *pending*
-* Supplementary data:
+* Supplementary data: [matRicom-suppData](https://github.com/Izzilab/matRicom-suppData)
 
 ## Abstract
 **Motivation:** Single-cell RNAseq (scRNA-seq) enables the study of cell-cell communication within entire tissues, organs and systems. While the relative composition of the extracellular matrix (ECM) - a complex meshwork of extracellular proteins with scaffolding, enzymatic and signaling activities necessary to multicellular organization - can be studied at high detail with scRNA-seq, its role in transducing signals to nearby cells cannot be studied equally in depth with existing packages.  

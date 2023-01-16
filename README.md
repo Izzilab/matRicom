@@ -274,7 +274,7 @@ NN_gr & DoRothEA -.- GEN
 - [Supplemental 4_matRicom_usage examples script.R](./supp.scripts/Supplemental%204_matRicom_usage%20examples%20script.R): Usage example script, all data are available online at https://doi.org/10.5281/zenodo.7385244
 
 ## Test runs
-MatRicom was successfully tested on the following datasets (the input data should be downloaded from 10xGenomics):
+Testing results are available at [matRicom-testRuns](https://github.com/Izzilab/matRicom-testRuns/) repository. matRicom was successfully tested on the following datasets (the input data should be downloaded from 10xGenomics):
 * Single Cell Gene Expression
   * 3' Targeted Demonstration (v3.1 Chemistry):
     * Hodgkin's Lymphoma, Dissociated Tumor: Whole Transcriptome Analysis 

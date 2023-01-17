@@ -115,8 +115,10 @@ For preparing data from [NicheNet](https://github.com/saeyslab/nichenetr), check
 Let's use the following dataset from the [10xGenomics](https://www.10xgenomics.com/resources/datasets) project: [PBMCs from a Healthy Donor: Whole Transcriptome Analysis)](https://www.10xgenomics.com/resources/datasets/pbm-cs-from-a-healthy-donor-whole-transcriptome-analysis-3-1-standard-4-0-0).
 * Clicking on *Gene Expression - Feature / cell matrix (filtered)* will download:
   * `Parent_NGSC3_DI_PBMC_filtered_feature_bc_matrix.tar.gz`
-* Extracting the archive, will produce the following sub-folder:
-  * `filtered_feature_bc_matrix/` folder
+* Extracting the archive, will produce sub-folder `filtered_feature_bc_matrix/` with the following contents:
+  * `barcodes.tsv.gz`
+  * `features.tsv.gz`
+  * `matrix.mtx.gz`
 
 ```R
 # Navigate to work dir, e.g:
@@ -150,9 +152,9 @@ Analogously to above, let's use: [Human Lung Cancer (FFPE)](https://www.10xgenom
   * `CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_filtered_feature_bc_matrix.h5`
   * `CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_filtered_feature_bc_matrix.tar.gz`
   * `CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_spatial.tar.gz`
-* Extracting the archives will produce, respectively:
-  * `filtered_feature_bc_matrix/` folder
-  * `spatial/` folder
+* Extracting the archives will produce, respective folders:
+  * `filtered_feature_bc_matrix/`
+  * `spatial/`
 * Place `spatial/` and the `*.h5` file within `filtered_feature_bc_matrix/`
 
 ```R

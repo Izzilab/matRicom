@@ -1947,7 +1947,7 @@ make.object <- function(data.name = NULL,
   library(patchwork)
 
   if(isTRUE(verbose)){
-  cat(crayon::white("1/3) loading data... "))}
+  cat(crayon::white("(1/3) loading data... "))}
 
   ddd <- data.dir
 
@@ -1972,11 +1972,11 @@ make.object <- function(data.name = NULL,
   tengen[["percent.mt"]] <- suppressMessages(PercentageFeatureSet(tengen, pattern = "^MT-"))
   if(isTRUE(dirty.trick)){
     if(isTRUE(verbose)){
-      cat(crayon::white("2/3) preparing the Seurat object, mitochondrial removal for non-human data might fail... "))}
+      cat(crayon::white("(2/3) preparing the Seurat object, mitochondrial removal for non-human data might fail... "))}
     rownames(counts.data) <- casefold(rownames(counts.data), upper = T)
   }
   if(isTRUE(verbose)){
-    cat(crayon::white("2/3) preparing the Seurat object... "))}
+    cat(crayon::white("(2/3) preparing the Seurat object... "))}
   tengen <- suppressMessages(subset(tengen, subset = nFeature_RNA > minfeatures & nFeature_RNA < 2500 & percent.mt < percentmt))
   tengen <- suppressMessages(NormalizeData(tengen, normalization.method = "LogNormalize", scale.factor = 10000, verbose = F))
   #tengen <- suppressMessages(NormalizeData(tengen)) #done it already just above
@@ -1991,7 +1991,7 @@ make.object <- function(data.name = NULL,
   cat(crayon::green("done \n"))}
 
   if(isTRUE(verbose)){
-  cat(crayon::white("3/3) exporting the Seurat object... "))}
+  cat(crayon::white("(3/3) exporting the Seurat object... "))}
   if(isTRUE(verbose)){
   cat(crayon::green("done \n"))}
   return(tengen)

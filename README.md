@@ -274,7 +274,7 @@ NN_gr & DoRothEA -.- GEN
 - [Supplemental 4_matRicom_usage examples script.R](./supp.scripts/Supplemental%204_matRicom_usage%20examples%20script.R): Usage example script, all data are available online at https://doi.org/10.5281/zenodo.7385244
 
 ## Test runs
-Testing results are available at [matRicom-testRuns](https://github.com/Izzilab/matRicom-testRuns/) repository. matRicom was successfully tested on the following datasets (the input data should be downloaded from 10xGenomics):
+Testing results are available at [matRicom-testRuns](https://github.com/Izzilab/matRicom-testRuns/) repository (the input data should be downloaded from 10xGenomics). matRicom was successfully tested on the following datasets (datasets used as examples above are in **bold**):
 * Single Cell Gene Expression
   * 3' Targeted Demonstration (v3.1 Chemistry):
     * Hodgkin's Lymphoma, Dissociated Tumor: Whole Transcriptome Analysis 
@@ -323,11 +323,11 @@ Testing results are available at [matRicom-testRuns](https://github.com/Izzilab/
     ([test](https://github.com/Izzilab/matRicom-testRuns/tree/main/10xGenomics/Single_Cell_Immune_Profiling/Chromium_X_Series_5_Demonstration_v2_Chemistry/10k_bone_marrow_mononuclear_cells_BMMNCs_5_v2.0/))
     * 20k bone marrow mononuclear cells (BMMNCs), 5' HT v2.0
     ([url](https://www.10xgenomics.com/resources/datasets/20-k-bone-marrow-mononuclear-cells-bmmn-cs-5-ht-v-2-0-2-high-6-1-0))
-    ([test](10xGenomics_testing/Single_Cell_Immune_Profiling/Chromium_X_Series_5_Demonstration_v2_Chemistry/20k_bone_marrow_mononuclear_cells_BMMNCs_5_HT_v2.0/))
+    ([test](https://github.com/Izzilab/matRicom-testRuns/tree/main/10xGenomics/Single_Cell_Immune_Profiling/Chromium_X_Series_5_Demonstration_v2_Chemistry/20k_bone_marrow_mononuclear_cells_BMMNCs_5_HT_v2.0/))
   * Chromium X Series Demonstration - 20k Human PBMCs, 5' (v2 Chemistry):
     * 20k Human PBMCs, 5' HT v2.0
     ([url](https://www.10xgenomics.com/resources/datasets/20-k-human-pbm-cs-5-ht-v-2-0-2-high-6-1-0))
-    ([test](10xGenomics_testing/Single_Cell_Immune_Profiling/Chromium_X_Series_Demonstration_-_20k_Human_PBMCs_5_v2_Chemistry/20k_Human_PBMCs_5_HT_v2.0/))
+    ([test](https://github.com/Izzilab/matRicom-testRuns/tree/main/10xGenomics/Single_Cell_Immune_Profiling/Chromium_X_Series_Demonstration_-_20k_Human_PBMCs_5_v2_Chemistry/20k_Human_PBMCs_5_HT_v2.0/))
 * Spatial Gene Expression
   * CytAssist Spatial Gene Expression Demonstration (v2 Chemistry)
     * **Human Lung Cancer (FFPE)**

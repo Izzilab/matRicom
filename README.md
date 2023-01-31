@@ -346,4 +346,8 @@ Testing results are available at [matRicom-testRuns](https://github.com/Izzilab/
     ([url](https://www.10xgenomics.com/resources/datasets/mouse-brain-coronal-section-2-ffpe-2-standard))
     ([test](https://github.com/Izzilab/matRicom-testRuns/tree/main/10xGenomics/Spatial_Gene_Expression/CytAssist_Spatial_Gene_Expression_Demonstration_v2_Chemistry/Mouse_Brain_Coronal_Section_2_FFPE/))
 
-**Note**: further tests are undergoing at the moment.
+**Note**: you may wish to use a smaller dataset, if you get an error with `make.object`, like this:
+>Error in scan(file, nmax = 1, what = what, quiet = TRUE, ...) :  
+>scan() expected 'an integer', got '11478518550'
+
+_**Further tests are undergoing at the moment.**_

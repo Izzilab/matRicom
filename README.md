@@ -15,6 +15,7 @@ install.packages("BiocManager")
 BiocManager::install("ComplexHeatmap")
 install.packages("githubinstall")
 BiocManager::install("limma")
+install.packages("devtools")
 devtools::install_github("saeyslab/nichenetr")
 install.packages("ggalluvial")
 install.packages("webr")
@@ -26,11 +27,11 @@ A few notes about Linux users:
 ```R
 # If installation of `devEMF` (dependency of `webr`) fails, download the tarball
 # (https://cran.r-project.org/web/packages/devEMF/index.html), change the shebang
-# of the configure script to /bin/bash, then install from the archive:
+# of the configure script to `#!/bin/bash`, then install from the archive:
 install.packages("./devEMF-4.1-1.tar.gz")
 
 # You may need to explicitly install (for spatial data analysis) these:
-# hdf5 (https://hdfgroup.org/) -- a dependency outside R; installation method
+# hdf5 (https://hdfgroup.org/) -- a dependency outside R; its installation method
 # depends on your distribution
 BiocManager::install("rhdf5")
 install.packages("hdf5r")

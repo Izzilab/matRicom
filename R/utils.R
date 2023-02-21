@@ -2011,7 +2011,10 @@ filter.finder <- function(seurat.obj=NULL,
 #' @param min.cells numeric. The minimum number of cells expressing a given feature.
 #' @param min.features numeric. The minimum number of features per cell.
 #' @param percent.mt numeric. Cutoff for mitochondrial RNA content.
-
+#'
+#' @param gene.column.rx numeric. Option gene.column of Read10X (defaults to 2)
+#' @param cell.column.rx numeric. Option cell.column of Read10X (defaults to 1)
+#' 
 #' @return a Seurat object
 #' @export
 
@@ -2020,6 +2023,8 @@ filter.finder <- function(seurat.obj=NULL,
 make.object <- function(data.name = NULL,
                         data.dir = NULL,
                         project.name = NULL,
+                        gene.column.rx = 2,
+                        cell.column.rx = 1,
                         data.multiple = FALSE,
                         dirty.trick = FALSE,
                         min.cells = 3,
@@ -2085,7 +2090,7 @@ make.object <- function(data.name = NULL,
 
   ddd <- data.dir
 
-  tengen.data <- Read10X(ddd)
+  tengen.data <- Read10X(ddd, gene.column = gene.column.rx, cell.column = cell.column.rx)
 
   # are we using data with more than one type?
   if(isTRUE(data.multiple)){

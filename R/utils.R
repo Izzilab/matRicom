@@ -1,5 +1,5 @@
 #' matricom: cell-ECM communications in scRNAseq data
-#'
+
 #' @param seurat.obj character. A Seurat or Seurat-like object.
 #' @param group.column character. Name of the column in metadata with cell identities to be used.
 #' @param min.pct numeric. Minimum % of cells with non-zero expression of a ligand/receptor/target. All ligands/receptors/targets less present will be ignored. Only for ligands, a total of min.pct is also allowed from the total, on top of cell-specific quantities. Default is 0.3 (30%).
@@ -9,11 +9,14 @@
 #' @param max.ligands numeric. Maximum number of ligands to test for response. Default is 10, in decreasing Pearson order.
 #' @param max.targets numeric. Maximum number of targets to continue with after having tested the response. Default is 10, in decreasing gene expression order.
 #' @param explainable logical. Whether to apply differential correlation analysis to targets' regulators. In the analysis, all known regulators of each target gene per receiving population are correlated to their targets with Spearman correlation. In parallel, the same tests are repeated across the rest of sample (non-receiving population). Results are confronted and the regulator with the highest differential (positive) correlation in the receiving population is chosen as the master regulator and reported. Default is TRUE.
+#' @param add.RF logical. Whether to add a random forest run to the results from the correlation analysis. Features are ordered by their VarImp and as many as max.ligands (up to twice that value, once for receptors and once for TF) are chosen. Default is TRUE.
 #' @param scale.results logical. Whether to rescale the gene expression values of ligands/receptors/targets to the [0.01-1] interval by cell type to ease cross-comparisons. Default is TRUE.
+#' @param use.ensembl logical. Whether to try and convert all matricom objects and complex annotation to ENSEMBLE GENE IDs on the fly to extend compatibility. It is not guaranteed to work.
 #' @param verbose logical. Progress messages are printed to the console. Default is TRUE.
+
 #' @return a dataframe with ligand/receptor/TF/target quadruplets, the sender and receiver cells for each, and the mean expression values of each triplet.
 #' @export
-#'
+
 #' @examples matricom(obj,"group.column")
 
 matricom <- function(seurat.obj=NULL,
@@ -25,7 +28,10 @@ matricom <- function(seurat.obj=NULL,
                      max.ligands=10,
                      max.targets=10,
                      explainable=TRUE,
+                     add.RF=TRUE,
                      scale.results=TRUE,
+                     use.ensembl=FALSE,
+                     force.flushing=FALSE,
                      verbose=T){
 
   #error handling
@@ -58,15 +64,49 @@ matricom <- function(seurat.obj=NULL,
   if(isTRUE(verbose)){cat(crayon::white("(1/9) loading matRicom objects... "))}
   data(matricom_obj, package = "matRicom")
   data(ncpl, package = "matRicom")
-  new_lr <- matricom_obj$new_lr
-  new_gr <- matricom_obj$new_gr
-  new_ligand_target_matrix <- matricom_obj$new_ligand_target_matrix
+  if(isFALSE(use.ensembl)){
+    new_lr <- matricom_obj$new_lr
+    new_gr <- matricom_obj$new_gr
+    new_ligand_target_matrix <- matricom_obj$new_ligand_target_matrix}else{
+
+      new_lr <- matricom_obj$new_lr
+      new_gr <- matricom_obj$new_gr
+      new_ligand_target_matrix <- matricom_obj$new_ligand_target_matrix
+
+      require("AnnotationDbi")
+      require("org.Hs.eg.db")
+
+      new_lr$from.E <- suppressMessages(mapIds(org.Hs.eg.db, keys=new_lr$from, column="ENSEMBL", keytype="SYMBOL", multiVals="first"))
+      new_lr$to.E <- suppressMessages(mapIds(org.Hs.eg.db, keys=new_lr$to, column="ENSEMBL", keytype="SYMBOL", multiVals="first"))
+      new_lr$from <- NULL
+      new_lr$to <- NULL
+      new_lr <- new_lr[,c(3,4,1,2)]
+      names(new_lr)[1:2] <- c("from","to")
+      new_lr <- na.omit(new_lr)
+
+      new_gr$from.E <- suppressMessages(mapIds(org.Hs.eg.db, keys=new_gr$from, column="ENSEMBL", keytype="SYMBOL", multiVals="first"))
+      new_gr$to.E <- suppressMessages(mapIds(org.Hs.eg.db, keys=new_gr$to, column="ENSEMBL", keytype="SYMBOL", multiVals="first"))
+      new_gr$from <- NULL
+      new_gr$to <- NULL
+      new_gr <- new_gr[,c(3,4,1,2)]
+      names(new_gr)[1:2] <- c("from","to")
+      new_gr <- na.omit(new_gr)
+
+      vcn <- suppressMessages(mapIds(org.Hs.eg.db, keys=colnames(new_ligand_target_matrix), column="ENSEMBL", keytype="SYMBOL", multiVals="first"))
+      vrn <- suppressMessages(mapIds(org.Hs.eg.db, keys=rownames(new_ligand_target_matrix), column="ENSEMBL", keytype="SYMBOL", multiVals="first"))
+      colnames(new_ligand_target_matrix) <- vcn
+      rownames(new_ligand_target_matrix) <- vrn
+      new_ligand_target_matrix <- new_ligand_target_matrix[!is.na(rownames(new_ligand_target_matrix)),
+                                                           !is.na(colnames(new_ligand_target_matrix))]
+    }
+
   if(isTRUE(verbose)){cat(crayon::green("done \n"))}
 
   #isolation of valid ECM genes (should be expressed at least by 30% of a population but can be changed via the min.pct parameter)
   if(isTRUE(verbose)){cat(crayon::white("(2/9) evaluating active matrisome genes in cells... "))}
 
   obj <- seurat.obj
+  seurat.obj <- NULL
 
   Idents(obj) <- obj@meta.data[,group.column]
 
@@ -164,6 +204,11 @@ matricom <- function(seurat.obj=NULL,
   }
   if(isTRUE(verbose)){cat(crayon::green("done \n"))}
 
+  if(isTRUE(force.flushing)){
+    gc()
+    if(isTRUE(verbose)){cat(crayon::yellow("memory flushed, now restarting \n"))}
+  }
+
   #filtering potentially active ligands
   if(isTRUE(verbose)){cat(crayon::white("(4/9) extracting potential matrisome ligands based on receptors... "))}
   potential_ligands <- new_lr %>% filter(from %in% expressed_ligands & to %in% nnn) %>% pull(from) %>% unique()
@@ -241,6 +286,7 @@ matricom <- function(seurat.obj=NULL,
   ligand_activities <- list()
   for(i in names(ls_of_interest)){
     tr <- ls_of_interest[[i]]
+    potential_ligands <- potential_ligands[potential_ligands%in%colnames(new_ligand_target_matrix)]
     if(length(tr)<1){
       next
     }else{
@@ -376,10 +422,23 @@ matricom <- function(seurat.obj=NULL,
   if(isTRUE(verbose)){cat(crayon::green("done \n"))}
 
   #explainable paths
-  ### quick differential correlation
+  ### quick differential correlation - VERSION 2
 
   if(!isFALSE(explainable)){
     if(isTRUE(verbose)){cat(crayon::white(paste0("(8/9) finding explainable paths... ")))}
+
+    om <- as.matrix(obj@assays$RNA@counts)
+    om[is.na(om)] <- 0
+    rands <- list()
+    for(i in 1:10){
+      rm <- om[sample(rownames(om),100,replace = T),
+               sample(colnames(om),100,replace = T)]
+      cf <- mean(rowMeans(suppressWarnings(cor(rm,method = "spearman"))))
+      cf <- ifelse(is.na(cf),0,cf)
+      rands[[i]] <- cf
+    }
+
+    rands <- mean(unlist(rands))
 
     rp <- as.character(unique(fin$receiving.population))
     l1 <- list()
@@ -389,105 +448,59 @@ matricom <- function(seurat.obj=NULL,
       rs <- as.character(unique(z$ECM.receptor))
       s <- obj@meta.data[obj@meta.data[,group.column]==i,]
       s <- unique(rownames(s))
-      s2 <- obj@meta.data[obj@meta.data[,group.column]!=i,]
-      s2 <- unique(rownames(s2))
-
-      tf1 <- list()
-      for(w in g){
-        j <- new_gr[new_gr$to%in%w,]
-        j <- unique(j$from)
-
-        n1 <- t(as.matrix(obj@assays$RNA@scale.data[rownames(obj@assays$RNA@scale.data)%in%c(j,w),
-                                                    colnames(obj@assays$RNA@scale.data)%in%s]))
-        n2 <- t(as.matrix(obj@assays$RNA@scale.data[rownames(obj@assays$RNA@scale.data)%in%c(j,w),
-                                                    colnames(obj@assays$RNA@scale.data)%in%s2]))
-        n1[is.na(n1)] <- 0
-        n2[is.na(n2)] <- 0
-
-
-        if(ncol(n1)<1){
-          next
+      if(length(s)<1){next}else{
+        #s2 <- obj@meta.data[obj@meta.data[,group.column]!=i,]
+        #s2 <- unique(rownames(s2))
+        tarrec.m <- om[rownames(om)%in%unique(c(g,rs)),
+                       colnames(om)%in%s]
+        mat1 <- suppressWarnings(cor(t(tarrec.m),method="spearman"))
+        mat1[upper.tri(mat1)] <- NA
+        rw <- rownames(mat1)
+        cl <- colnames(mat1)
+        mat1 <- as.data.frame(cbind(which(!is.na(mat1),arr.ind = TRUE),na.omit(as.vector(mat1))))
+        mat1 <- mat1[mat1$V3>rands,]
+        mat1 <- mat1[mat1$row!=mat1$col,]
+        if(nrow(mat1)<1){next}else{
+          mat1$row <- rw[mat1$row]
+          mat1$col <- cl[mat1$col]
+          names(mat1) <- c("ECM.receptor","target.gene")
+          tf <- new_gr[new_gr$to%in%mat1$target.gene,]
+          rs <- as.character(unique(tf$from))
+          #s <- obj@meta.data[obj@meta.data[,group.column]==i,]
+          #s <- unique(rownames(s))
+          #s2 <- obj@meta.data[obj@meta.data[,group.column]!=i,]
+          #s2 <- unique(rownames(s2))
+          tartf.m <- om[rownames(om)%in%unique(c(mat1$target.gene,rs)),
+                        colnames(om)%in%s]
+          mat2 <- suppressWarnings(cor(t(tartf.m),method="spearman"))
+          mat2[upper.tri(mat2)] <- NA
+          rw <- rownames(mat2)
+          cl <- colnames(mat2)
+          mat2 <- as.data.frame(cbind(which(!is.na(mat2),arr.ind = TRUE),na.omit(as.vector(mat2))))
+          mat2 <- mat2[mat2$V3>rands,]
+          mat2 <- mat2[mat2$row!=mat2$col,]
+          if(nrow(mat2)<1){next}else{
+            mat2$row <- rw[mat2$row]
+            mat2$col <- cl[mat2$col]
+            names(mat2) <- c("TF","target.gene")
+            fifin <- distinct(merge(mat1,mat2,by="target.gene"))
+            if(nrow(fifin)<1){next}else{
+              nobj <- om[rownames(om)%in%unique(fifin$TF),
+                         colnames(om)%in%s]
+              df <- data.frame(TF=rownames(nobj),TF.value=rowMeans(nobj))
+              df$receiving.population <- i
+              df <- merge(fifin,df,by=c("TF"))
+              df <- df[,c(1,2,3,6,7)]
+              l1[[i]] <- df
+            }
+          }
         }
-        if(ncol(n2)<1){
-          next
-        }
-
-        c1 <- suppressWarnings(cor(n1,method = "spearman"))
-        c2 <- suppressWarnings(cor(n2,method = "spearman"))
-        c1 <- reshape2::melt(c1)
-        c2 <- reshape2::melt(c2)
-        c1 <- c1[c1$Var1!=c1$Var2,]
-        c2 <- c2[c2$Var1!=c2$Var2,]
-        c1 <- na.omit(c1)
-        c2 <- na.omit(c2)
-
-        a1.1 <- c1[c1$Var1%in%w,]
-        a1.2 <- c1[c1$Var2%in%w,]
-        a1.2 <- a1.2[,c(2,1,3)]
-        names(a1.2) <- names(a1.1)
-        c1 <- distinct(bind_rows(a1.1,a1.2))
-        a2.1 <- c2[c2$Var1%in%w,]
-        a2.2 <- c2[c2$Var2%in%w,]
-        a2.2 <- a2.2[,c(2,1,3)]
-        names(a2.2) <- names(a2.1)
-        c2 <- distinct(bind_rows(a2.1,a2.2))
-
-        c1 <- c1[c1$value>0,]
-        c2 <- c2[c2$value>0,]
-
-        if(nrow(c1)<1){
-          next
-        }
-        if(nrow(c2)<1){
-          next
-        }
-
-        c1$id <- paste0(c1$Var1,"_",c1$Var2)
-        c2$id <- paste0(c2$Var1,"_",c2$Var2)
-
-        diff.tf <- list()
-        for(h in unique(c1$id)){
-          x1 <- c1[c1$id==h,]$value
-          if(is.null(x1)){x1<-0}
-          if(length(x1)<1){x1<-0}
-          x2 <- c2[c2$id==h,]$value
-          if(is.null(x2)){x2<-0}
-          if(length(x2)<1){x2<-0}
-          diff.tf[[h]] <- data.frame(id=h,v=x1-x2)
-        }
-        diff.tf <- bind_rows(diff.tf)
-        diff.tf <- diff.tf[diff.tf$v>0,]
-
-        if(nrow(diff.tf)<1){
-          next
-        }else{
-          diff.tf$TF <- gsub(".*_","",diff.tf$id)
-          diff.tf <- diff.tf[order(-diff.tf$v),]
-        }
-
-        tf1[[w]] <- data.frame(target.gene=w,TF=diff.tf$TF[1])
-
-      }
-      tf1 <- bind_rows(tf1)
-
-      if(nrow(tf1)<1){next}else{
-        nobj <- obj
-        nids <- ifelse(rownames(nobj@meta.data)%in%s,1,0)
-        Idents(nobj) <- nids
-        nobj <- subset(nobj,idents = 1)
-
-        avg_expression_tf <- suppressMessages(as.data.frame(t(unlist(AverageExpression(nobj, features = unique(tf1$TF))[[1]]))))
-        avg_expression_tf <- suppressWarnings(data.frame(TF=names(avg_expression_tf),TF.value=t(avg_expression_tf)))
-        names(avg_expression_tf)[2] <- "TF.value"
-        tf1 <- distinct(merge(tf1,avg_expression_tf,by="TF"))
-
-        if(nrow(tf1)<1){next}else{
-        l1[[i]] <- data.frame(tf1,receiving.population=i)}
-      }
-    }
+      }}
     l1 <- bind_rows(l1)
-    new_fin <- distinct(merge(fin,l1,by=c("receiving.population","target.gene")))
-    new_fin <- new_fin[,c(3:5,1,6:7,2,8,9,10)]
+    rownames(l1) <- NULL
+
+    new_fin <- distinct(merge(fin,l1,by=c("receiving.population","target.gene","ECM.receptor")))
+    new_fin <- new_fin[,c(4:6,1,3,7,2,8,9,10)]
   }else{
     if(isTRUE(verbose)){cat(crayon::white("(8/9) not searching for explainable paths \n"))}
     new_fin <- fin
@@ -495,9 +508,78 @@ matricom <- function(seurat.obj=NULL,
     new_fin$TF.value <- 1
   }
 
+  if(isTRUE(add.RF)){
+    rlst <- list()
+    for(i in unique(new_fin$receiving.population)){
+      z <- subset(new_fin,new_fin$receiving.population==i)
+      z <- unique(c(z$ECM.receptor,z$TF))
+      z <- z[z!="not searched"]
+      if(length(z)<1){next}else{
+        mk <- obj@assays$RNA@counts[rownames(obj@assays$RNA@counts)%in%z,]
+        mk <- as.matrix(mk)
+        Y <- rownames(obj@meta.data[obj@meta.data[,group.column]==i,])
+        Y <- ifelse(colnames(mk)%in%Y,"first","second")
+        Y <- factor(Y,levels=c("first","second"))
+        mk[is.na(mk)] <- 0
+        mk <- t(mk)
+        mk <- as.data.frame(apply(mk,2,scale))
+        mk$identity <- Y
+
+        set.seed(12345)
+        sds <- vector(mode = "list", length = 5)
+        inTrain <- createDataPartition(mk$identity, p = 0.7, list = FALSE)
+        trainData <- mk[inTrain,]
+        testData <- mk[-inTrain,]
+
+        suppressMessages(suppressWarnings(
+          my_control <- trainControl(
+            method="boost",
+            number=5,
+            savePredictions="final",
+            classProbs=TRUE,
+            index=createResample(trainData$identity,5),
+            summaryFunction=twoClassSummary
+          )
+        ))
+
+        suppressMessages(suppressWarnings(
+          rf_default <- train(identity~.,
+                              data=mk,
+                              method='rf',
+                              metric='Accuracy',
+                              trControl=my_control
+          )
+        ))
+
+        vs <- vs <- as.data.frame(varImp(rf_default)$importance)
+        vs$gene <- rownames(vs)
+        vs <- vs[order(-vs$Overall),]
+        if(nrow(vs)>max.ligands){
+          vs <- vs[1:max.ligands,]
+        }else{vs <- vs}
+
+        fincut <- subset(new_fin,new_fin$receiving.population==i)
+        fincut <- fincut[fincut$ECM.receptor%in%vs$gene & fincut$TF%in%vs$gene,]
+
+        if(nrow(fincut)<1){
+          fincut <- subset(new_fin,new_fin$receiving.population==i)
+          fincut <- fincut[fincut$ECM.receptor%in%vs$gene | fincut$TF%in%vs$gene,]
+
+          if(nrow(fincut)<1){
+
+        }else{
+          rlst[[i]] <- fincut}
+        }
+
+      }
+    }
+    rlst <- bind_rows(rlst)
+    new_fin <- rlst
+  }
+
   if(nrow(new_fin)<1){
     cat(crayon::red("\nno ligand path was found, execution stops \n"))
-    cat(crayon::red("\ntry changing the min.pct or the expr.filter parameter \n"))
+    cat(crayon::red("\ntry changing the min.pct or the expr.filter parameter or to set add.RF to FALSE\n"))
     stop()
   }
   if(isTRUE(verbose)){cat(crayon::green("done \n"))}
@@ -506,6 +588,7 @@ matricom <- function(seurat.obj=NULL,
 
   if(isTRUE(scale.results)){
     if(isTRUE(verbose)){cat(crayon::white("(9/9) scaling the results to [0,1] and annotating... "))}
+    library(scales)
     df_scaled <- new_fin %>% group_by(origin.population) %>% mutate(ECM.value=round(rescale(ECM.value,to=c(0.01,1)),3)) %>%
       group_by(receiving.population) %>% mutate(receptor.value=round(rescale(receptor.value,to=c(0.01,1)),3)) %>%
       group_by(receiving.population) %>% mutate(target.value=round(rescale(target.value,to=c(0.01,1)),3)) %>%
@@ -519,7 +602,11 @@ matricom <- function(seurat.obj=NULL,
       l <- list()
       for(w in ncpl$complex){
         s <- subset(ncpl,ncpl$complex==w)
-        s <- unlist(strsplit(s$genes,split=";"))
+        if(isFALSE(use.ensembl)){
+          s <- unlist(strsplit(s$genes,split=";"))}else{
+            s <- unlist(strsplit(s$genes,split=";"))
+            s <- suppressMessages(mapIds(org.Hs.eg.db, keys=s, column="ENSEMBL", keytype="SYMBOL", multiVals="first"))
+          }
         y <- length(intersect(s,z))
         if(y<2){next}else{
           y <- intersect(s,z)
@@ -567,20 +654,30 @@ matricom <- function(seurat.obj=NULL,
     }
 
 
+  # did we have Ensembl IDs in the output? Convert to gene names.
+  if(isTRUE(use.ensembl)){
+    fin$ECM.component <- as.character(mapIds(org.Hs.eg.db, keys=fin$ECM.component, column="SYMBOL", keytype="ENSEMBL"))
+    fin$ECM.receptor <- as.character(mapIds(org.Hs.eg.db, keys=fin$ECM.receptor, column="SYMBOL", keytype="ENSEMBL"))
+    fin$target.gene <- as.character(fin$target.gene)
+    fin$target.gene <- as.character(mapIds(org.Hs.eg.db, keys=fin$target.gene, column="SYMBOL", keytype="ENSEMBL"))
+    fin$TF <- as.character(mapIds(org.Hs.eg.db, keys=fin$TF, column="SYMBOL", keytype="ENSEMBL"))
+  }
+
   if(isTRUE(verbose)){cat(crayon::green("done \n "))}
+
   return(fin)
 }
 
 #' flowgraph: representing cell-ECM communications with alluvials
-#'
+
 #' @param result.obj character. The results from a previous call to matricom.
 #' @param targets logical. Whether to add target genes (and their connections) to the graph. Since it might clutter the graph, default is FALSE.
 #' @param color.by characters. Color the ribbons (alluvials) by the sender or the receiver population, or by the ECM component. Default is "sender".
 #' @param simplify logical. Whether to cut all triplets where a component's expression (scaled) is below 0.1. Default is TRUE, to de-clutter the graph. A failsafe mechanism is triggered if all values fall below 0.1 and this option is TRUE.
-#'
+
 #' @return an alluvial plot made with ggplot2
 #' @export
-#'
+
 #' @examples flowgraph(results)
 
 flowgraph <- function(result.obj=NULL,
@@ -712,13 +809,13 @@ flowgraph <- function(result.obj=NULL,
 }
 
 #' annograph: matrisome annotations with nested pie charts
-#'
+
 #' @param result.obj character. The results from a previous call to matricom.
 #' @param select character. Annotate matrisome families and categories for the sender or the receiver population. Default is "sender".
-#'
+
 #' @return a PieDonut (a nested pie chart) made with ggplot2
 #' @export
-#'
+
 #' @examples annograph(results)
 
 annograph <- function(result.obj=NULL,
@@ -766,14 +863,14 @@ annograph <- function(result.obj=NULL,
 }
 
 #' compgraph: representing differential cell-ECM communications with alluvials
-#'
+
 #' @param result.obj character. A list with strictly two results, each scaled, from previous calls to matricom.
 #' @param targets logical. Whether to add target genes (and their connections) to the graph. Since it might clutter the graph, default is FALSE.
 #' @param only.unique logical. Whether to plot only the communications (alluvials) that differ between conditions (present in one and absent in another). Default is TRUE.
-#'
+
 #' @return an alluvial plot made with ggplot2
 #' @export
-#'
+
 #' @examples compgraph(list(a=results_1,b=results_2))
 
 compgraph <- function(result.obj=NULL,
@@ -922,17 +1019,17 @@ compgraph <- function(result.obj=NULL,
 }
 
 #' netgraph: representing cell-ECM communications with networks, focusing on intracellular paths
-#'
+
 #' @param result.obj character. The results from a previous call to matricom.
 #' @param receiving.population character. The name of one receiving population in the results. If NULL (default), a random population is picked.
 #' @param ECM.component character. The name of one ECM component impacting on a receiving population in the results. If NULL (default), a random ECM component is picked.
 #' @param label.size numeric. Size of the vertex labels in the network plot. If NULL (default), no labels are added to the nodes of the plot.
 #' @param simplified logical. Whether to remove ECM-loops (an ECM component might also work as a receptor and/or be a target of its own stimulation). Since it helps de-cluttering the graph, default is TRUE.
 #' @param interactive logical. Whether to use the VisNetwork package to plut an interactive form of the graph. Default is FALSE.
-#'
+
 #' @return a network plot made with igraph
 #' @export
-#'
+
 #' @examples netgraph(results)
 
 netgraph <- function(result.obj=NULL,
@@ -1037,7 +1134,7 @@ netgraph <- function(result.obj=NULL,
 }
 
 #' matricom.spatial: cell-ECM communications in Spatial RNAseq data
-#'
+
 #' @param seurat.obj character. A spatial Seurat object.
 #' @param group.column character. Name of the column in metadata with cell identities to be used. Strongly suggested to use cluster identities.
 #' @param min.pct numeric. Minimum % of cells with non-zero expression of a ligand/receptor/target within a cluster. All ligands/receptors/targets less present will be ignored. Only for ligands, a total of min.pct is also allowed from the total, on top of cell-specific quantities. Default is 0.5 (50%).
@@ -1046,12 +1143,14 @@ netgraph <- function(result.obj=NULL,
 #' @param geneset character. A response geneset (a vector of gene names matching those of the counts in the object) to test ligands against. If NULL (default), a recursive cell type-vs.-all DEG search is launched using Seurat functions.
 #' @param max.ligands numeric. Maximum number of ligands to test for response. Default is 10, in decreasing Pearson order.
 #' @param max.targets numeric. Maximum number of targets to continue with after having tested the response. Default is 10, in decreasing gene expression order.
-#' @param explainable logical. Whether to apply the two-step adaptive lasso procedure to targets. The first step regresses targets vs. TFs, while the second regresses the TFs vs. the receptors, thus forming a "path" to explain the expression of a target gene. Default is FALSE.
+#' @param explainable logical. Whether to apply differential correlation analysis to targets' regulators. In the analysis, all known regulators of each target gene per receiving population are correlated to their targets with Spearman correlation. In parallel, the same tests are repeated across the rest of sample (non-receiving population). Results are confronted and the regulator with the highest differential (positive) correlation in the receiving population is chosen as the master regulator and reported. Default is TRUE.
+#' @param add.RF logical. Whether to add a random forest run to the results from the correlation analysis. Features are ordered by their VarImp and as many as max.ligands (up to twice that value, once for receptors and once for TF) are chosen. Default is TRUE.
 #' @param scale.results logical. Whether to rescale the gene expression values of ligands/receptors/targets to the [0.01-1] interval by cell type to ease cross-comparisons. Default is TRUE.
 #' @param verbose logical. Progress messages are printed to the console. Default is TRUE.
+
 #' @return a dataframe with ligand/receptor/TF/target quadruplets, the sender and receiver cells for each, and the mean expression values of each triplet.
 #' @export
-#'
+
 #' @examples matricom.spatial(obj,"group.column")
 
 matricom.spatial <- function(seurat.obj=NULL,
@@ -1063,6 +1162,7 @@ matricom.spatial <- function(seurat.obj=NULL,
                              max.ligands=10,
                              max.targets=10,
                              explainable=TRUE,
+                             add.RF=TRUE,
                              scale.results=TRUE,
                              verbose=T){
 
@@ -1423,128 +1523,163 @@ matricom.spatial <- function(seurat.obj=NULL,
   if(isTRUE(verbose)){cat(crayon::green("done \n"))}
 
   #explainable paths
-  ### quick differential correlation
+  ### quick differential correlation - VERSION 2
 
   if(!isFALSE(explainable)){
     if(isTRUE(verbose)){cat(crayon::white(paste0("(8/9) finding explainable paths... ")))}
+
+    om <- as.matrix(obj@assays$SCT@counts)
+    om[is.na(om)] <- 0
+    rands <- list()
+    for(i in 1:10){
+      rm <- om[sample(rownames(om),100,replace = T),
+               sample(colnames(om),100,replace = T)]
+      cf <- mean(rowMeans(suppressWarnings(cor(rm,method = "spearman"))))
+      cf <- ifelse(is.na(cf),0,cf)
+      rands[[i]] <- cf
+    }
+
+    rands <- mean(unlist(rands))
 
     rp <- as.character(unique(fin$receiving.population))
     l1 <- list()
     for(i in rp){
       z <- subset(fin,fin$receiving.population==i)
-      if(nrow(z)<1){next}
       g <- as.character(unique(z$target.gene))
       rs <- as.character(unique(z$ECM.receptor))
       s <- obj@meta.data[obj@meta.data[,group.column]==i,]
       s <- unique(rownames(s))
-      s2 <- obj@meta.data[obj@meta.data[,group.column]!=i,]
-      s2 <- unique(rownames(s2))
-
-      tf1 <- list()
-      for(w in g){
-        j <- new_gr[new_gr$to%in%w,]
-        j <- unique(j$from)
-
-        n1 <- t(as.matrix(obj@assays$SCT@scale.data[rownames(obj@assays$SCT@scale.data)%in%c(j,w),
-                                                    colnames(obj@assays$SCT@scale.data)%in%s]))
-        n2 <- t(as.matrix(obj@assays$SCT@scale.data[rownames(obj@assays$SCT@scale.data)%in%c(j,w),
-                                                    colnames(obj@assays$SCT@scale.data)%in%s2]))
-        n1[is.na(n1)] <- 0
-        n2[is.na(n2)] <- 0
-
-
-        if(ncol(n1)<1){
-          next
+      if(length(s)<1){next}else{
+        #s2 <- obj@meta.data[obj@meta.data[,group.column]!=i,]
+        #s2 <- unique(rownames(s2))
+        tarrec.m <- om[rownames(om)%in%unique(c(g,rs)),
+                       colnames(om)%in%s]
+        mat1 <- suppressWarnings(cor(t(tarrec.m),method="spearman"))
+        mat1[upper.tri(mat1)] <- NA
+        rw <- rownames(mat1)
+        cl <- colnames(mat1)
+        mat1 <- as.data.frame(cbind(which(!is.na(mat1),arr.ind = TRUE),na.omit(as.vector(mat1))))
+        mat1 <- mat1[mat1$V3>rands,]
+        mat1 <- mat1[mat1$row!=mat1$col,]
+        if(nrow(mat1)<1){next}else{
+          mat1$row <- rw[mat1$row]
+          mat1$col <- cl[mat1$col]
+          names(mat1) <- c("ECM.receptor","target.gene")
+          tf <- new_gr[new_gr$to%in%mat1$target.gene,]
+          rs <- as.character(unique(tf$from))
+          #s <- obj@meta.data[obj@meta.data[,group.column]==i,]
+          #s <- unique(rownames(s))
+          #s2 <- obj@meta.data[obj@meta.data[,group.column]!=i,]
+          #s2 <- unique(rownames(s2))
+          tartf.m <- om[rownames(om)%in%unique(c(mat1$target.gene,rs)),
+                        colnames(om)%in%s]
+          mat2 <- suppressWarnings(cor(t(tartf.m),method="spearman"))
+          mat2[upper.tri(mat2)] <- NA
+          rw <- rownames(mat2)
+          cl <- colnames(mat2)
+          mat2 <- as.data.frame(cbind(which(!is.na(mat2),arr.ind = TRUE),na.omit(as.vector(mat2))))
+          mat2 <- mat2[mat2$V3>rands,]
+          mat2 <- mat2[mat2$row!=mat2$col,]
+          if(nrow(mat2)<1){next}else{
+            mat2$row <- rw[mat2$row]
+            mat2$col <- cl[mat2$col]
+            names(mat2) <- c("TF","target.gene")
+            fifin <- distinct(merge(mat1,mat2,by="target.gene"))
+            if(nrow(fifin)<1){next}else{
+              nobj <- om[rownames(om)%in%unique(fifin$TF),
+                         colnames(om)%in%s]
+              df <- data.frame(TF=rownames(nobj),TF.value=rowMeans(nobj))
+              df$receiving.population <- i
+              df <- merge(fifin,df,by=c("TF"))
+              df <- df[,c(1,2,3,6,7)]
+              l1[[i]] <- df
+            }
+          }
         }
-        if(ncol(n2)<1){
-          next
-        }
-
-        c1 <- suppressWarnings(cor(n1,method = "spearman"))
-        c2 <- suppressWarnings(cor(n2,method = "spearman"))
-        c1 <- reshape2::melt(c1)
-        c2 <- reshape2::melt(c2)
-        c1 <- c1[c1$Var1!=c1$Var2,]
-        c2 <- c2[c2$Var1!=c2$Var2,]
-        c1 <- na.omit(c1)
-        c2 <- na.omit(c2)
-
-        a1.1 <- c1[c1$Var1%in%w,]
-        a1.2 <- c1[c1$Var2%in%w,]
-        a1.2 <- a1.2[,c(2,1,3)]
-        names(a1.2) <- names(a1.1)
-        c1 <- distinct(bind_rows(a1.1,a1.2))
-        a2.1 <- c2[c2$Var1%in%w,]
-        a2.2 <- c2[c2$Var2%in%w,]
-        a2.2 <- a2.2[,c(2,1,3)]
-        names(a2.2) <- names(a2.1)
-        c2 <- distinct(bind_rows(a2.1,a2.2))
-
-        c1 <- c1[c1$value>0,]
-        c2 <- c2[c2$value>0,]
-
-        if(nrow(c1)<1){
-          next
-        }
-        if(nrow(c2)<1){
-          next
-        }
-
-        c1$id <- paste0(c1$Var1,"_",c1$Var2)
-        c2$id <- paste0(c2$Var1,"_",c2$Var2)
-
-        diff.tf <- list()
-        for(h in unique(c1$id)){
-          x1 <- c1[c1$id==h,]$value
-          if(is.null(x1)){x1<-0}
-          if(length(x1)<1){x1<-0}
-          x2 <- c2[c2$id==h,]$value
-          if(is.null(x2)){x2<-0}
-          if(length(x2)<1){x2<-0}
-          diff.tf[[h]] <- data.frame(id=h,v=x1-x2)
-        }
-        diff.tf <- bind_rows(diff.tf)
-        diff.tf <- diff.tf[diff.tf$v>0,]
-
-        if(nrow(diff.tf)<1){
-          next
-        }else{
-          diff.tf$TF <- gsub(".*_","",diff.tf$id)
-          diff.tf <- diff.tf[order(-diff.tf$v),]
-        }
-
-        tf1[[w]] <- data.frame(target.gene=w,TF=diff.tf$TF[1])
-
-      }
-      tf1 <- bind_rows(tf1)
-
-      if(nrow(tf1)<1){next}else{
-        nobj <- obj
-        nids <- ifelse(rownames(nobj@meta.data)%in%s,1,0)
-        Idents(nobj) <- nids
-        nobj <- subset(nobj,idents = 1)
-
-        avg_expression_tf <- suppressMessages(as.data.frame(t(unlist(AverageExpression(nobj, features = unique(tf1$TF))[[1]]))))
-        avg_expression_tf <- suppressWarnings(data.frame(TF=names(avg_expression_tf),TF.value=t(avg_expression_tf)))
-        names(avg_expression_tf)[2] <- "TF.value"
-        tf1 <- distinct(merge(tf1,avg_expression_tf,by="TF"))
-        if(nrow(tf1)<1){next}else{
-          l1[[i]] <- data.frame(tf1,receiving.population=i)}
-      }
-    }
+      }}
     l1 <- bind_rows(l1)
-    new_fin <- distinct(merge(fin,l1,by=c("receiving.population","target.gene")))
-    new_fin <- new_fin[,c(3:5,1,6:7,2,8,9,10)]
+    rownames(l1) <- NULL
+
+    new_fin <- distinct(merge(fin,l1,by=c("receiving.population","target.gene","ECM.receptor")))
+    new_fin <- new_fin[,c(4:6,1,3,7,2,8,9,10)]
   }else{
-    if(isTRUE(verbose)){cat(crayon::white("(8/9) not searching for explainable paths... "))}
+    if(isTRUE(verbose)){cat(crayon::white("(8/9) not searching for explainable paths \n"))}
     new_fin <- fin
     new_fin$TF <- "not searched"
     new_fin$TF.value <- 1
   }
 
+  if(isTRUE(add.RF)){
+    rlst <- list()
+    for(i in unique(new_fin$receiving.population)){
+      z <- subset(new_fin,new_fin$receiving.population==i)
+      z <- unique(c(z$ECM.receptor,z$TF))
+      z <- z[z!="not searched"]
+      if(length(z)<1){next}else{
+        mk <- obj@assays$SCT@counts[rownames(obj@assays$SCT@counts)%in%z,]
+        Y <- rownames(obj@meta.data[obj@meta.data[,group.column]==i,])
+        Y <- ifelse(colnames(mk)%in%Y,"first","second")
+        Y <- factor(Y,levels=c("first","second"))
+        mk[is.na(mk)] <- 0
+        mk <- t(mk)
+        mk <- as.data.frame(apply(mk,2,scale))
+        mk$identity <- Y
+
+        set.seed(12345)
+        sds <- vector(mode = "list", length = 5)
+        inTrain <- createDataPartition(mk$identity, p = 0.7, list = FALSE)
+        trainData <- mk[inTrain,]
+        testData <- mk[-inTrain,]
+
+        suppressMessages(suppressWarnings(
+          my_control <- trainControl(
+            method="boost",
+            number=5,
+            savePredictions="final",
+            classProbs=TRUE,
+            index=createResample(trainData$identity,5),
+            summaryFunction=twoClassSummary
+          )
+        ))
+
+        suppressMessages(suppressWarnings(
+          rf_default <- train(identity~.,
+                              data=mk,
+                              method='rf',
+                              metric='Accuracy',
+                              trControl=my_control
+          )
+        ))
+
+        vs <- vs <- as.data.frame(varImp(rf_default)$importance)
+        vs$gene <- rownames(vs)
+        vs <- vs[order(-vs$Overall),]
+        if(nrow(vs)>max.ligands){
+          vs <- vs[1:max.ligands,]
+        }else{vs <- vs}
+
+        fincut <- subset(new_fin,new_fin$receiving.population==i)
+        fincut <- fincut[fincut$ECM.receptor%in%vs$gene & fincut$TF%in%vs$gene,]
+
+        if(nrow(fincut)<1){
+          fincut <- subset(new_fin,new_fin$receiving.population==i)
+          fincut <- fincut[fincut$ECM.receptor%in%vs$gene | fincut$TF%in%vs$gene,]
+
+          if(nrow(fincut)<1){
+
+          }else{
+            rlst[[i]] <- fincut}
+        }
+
+      }
+    }
+    rlst <- bind_rows(rlst)
+    new_fin <- rlst
+  }
+
   if(nrow(new_fin)<1){
-    cat(crayon::red("no ligand path was found, execution stops \n"))
-    cat(crayon::red("try changing the min.pct or the expr.filter parameter \n"))
+    cat(crayon::red("\nno ligand path was found, execution stops \n"))
+    cat(crayon::red("\ntry changing the min.pct or the expr.filter parameter or to set add.RF to FALSE\n"))
     stop()
   }
   if(isTRUE(verbose)){cat(crayon::green("done \n"))}
@@ -1626,16 +1761,16 @@ matricom.spatial <- function(seurat.obj=NULL,
 }
 
 #' Spatplot: representing cell-ECM communication in spatial RNAseq data
-#'
+
 #' @param result.obj character. The results from a previous call to matricom.spatial.
 #' @param seurat.obj character. A spatial Seurat object.
 #' @param group.column character. Name of the column in metadata with cell identities to be used.
 #' @param feature character. A quadruplet to be plotted, collapsed by underscores (e.g.,"gene_receptor_target_TF"). If NULL (default), the function will pick a random quadruplet.
 #' @param singles logical. Whether to plot also spatial plots of the ECM/receptor/target genes. Default is FALSE
-#'
+
 #' @return a multiplot with at least a spatial cluster plot, a spatial plot with clusters showing the chosen signal, and a spatial plot with average ECM/receptor/target intensities per dot. Might also include the spatial plots of the single elements.
 #' @export
-#'
+
 #' @examples spatplot(results,obj,"group.column")
 
 spatplot <- function(result.obj=NULL,
@@ -1737,15 +1872,14 @@ spatplot <- function(result.obj=NULL,
 }
 
 #' filter.finder: graphical utility to explore filters (expression and min.pct) for matRicom
-#'
+
 #' @param seurat.obj character. A Seurat, Seurat-like object, or a spatial Seurat object.
 #' @param group.column character. Name of the column in metadata with cell identities to be used.
-#'
+
 #' @return a faceted plot showing mean gene expression and % expression per cell identity together with results from 100 random samples and the defulat thresholds.
 #' @export
-#'
+
 #' @examples filter.finder(seurat.obj,group.column)
-#'
 
 filter.finder <- function(seurat.obj=NULL,
                           group.column=NULL){
@@ -1868,19 +2002,19 @@ filter.finder <- function(seurat.obj=NULL,
 }
 
 #' make.object: a wrapper around the Seurat workflow to prepare 10X data for matRicom
-#'
+
 #' @param data.name character. Internal data name.
 #' @param data.dir character. The full path to the directory containing the objects needed for the Load10X function in Seurat
 #' @param project.name character. How the project will be called. If NULL, data.name are used.
-#' @param data.multiple logical. If data contain multiple types. If TRUE, "Gene Expression" is used.
-#' @param dirty.trick logical. Whether to turn gene names to uppercase in case of non-human data (matRicom would othewise crash)
+#' @param data.multiple logical. IWhether data contain multiple types. If TRUE, "Gene Expression" is used. Default is FALSE.
+#' @param dirty.trick logical. Whether to turn gene names to uppercase in case of non-human data (matRicom would otherwise crash). Default is FALSE.
 #' @param min.cells numeric. The minimum number of cells expressing a given feature.
 #' @param min.features numeric. The minimum number of features per cell.
 #' @param percent.mt numeric. Cutoff for mitochondrial RNA content.
-#'
+
 #' @return a Seurat object
 #' @export
-#'
+
 #' @examples make.object(data.name,data.dir)
 
 make.object <- function(data.name = NULL,
@@ -1947,7 +2081,7 @@ make.object <- function(data.name = NULL,
   library(patchwork)
 
   if(isTRUE(verbose)){
-  cat(crayon::white("(1/3) loading data... "))}
+  cat(crayon::white("1/3) loading data... "))}
 
   ddd <- data.dir
 
@@ -1972,11 +2106,11 @@ make.object <- function(data.name = NULL,
   tengen[["percent.mt"]] <- suppressMessages(PercentageFeatureSet(tengen, pattern = "^MT-"))
   if(isTRUE(dirty.trick)){
     if(isTRUE(verbose)){
-      cat(crayon::white("(2/3) preparing the Seurat object, mitochondrial removal for non-human data might fail... "))}
+      cat(crayon::white("2/3) preparing the Seurat object, mitochondrial removal for non-human data might fail... "))}
     rownames(counts.data) <- casefold(rownames(counts.data), upper = T)
   }
   if(isTRUE(verbose)){
-    cat(crayon::white("(2/3) preparing the Seurat object... "))}
+    cat(crayon::white("2/3) preparing the Seurat object... "))}
   tengen <- suppressMessages(subset(tengen, subset = nFeature_RNA > minfeatures & nFeature_RNA < 2500 & percent.mt < percentmt))
   tengen <- suppressMessages(NormalizeData(tengen, normalization.method = "LogNormalize", scale.factor = 10000, verbose = F))
   #tengen <- suppressMessages(NormalizeData(tengen)) #done it already just above
@@ -1991,14 +2125,14 @@ make.object <- function(data.name = NULL,
   cat(crayon::green("done \n"))}
 
   if(isTRUE(verbose)){
-  cat(crayon::white("(3/3) exporting the Seurat object... "))}
+  cat(crayon::white("3/3) exporting the Seurat object... "))}
   if(isTRUE(verbose)){
   cat(crayon::green("done \n"))}
   return(tengen)
 }
 
 #' make.object.spatial: a wrapper around the Seurat workflow to prepare spatial 10X data for matRicom
-#'
+
 #' @param data.name character. Internal data name.
 #' @param data.dir character. The full path to the directory containing the objects needed for the Load10X_spatial function in Seurat (including h5 file). The folder must contain the h5 file plus a subfolder with the other requested data.
 #' @param project.name character. How the project will be called. If NULL, data.name are used.
@@ -2007,10 +2141,10 @@ make.object <- function(data.name = NULL,
 #' @param min.cells numeric. The minimum number of cells expressing a given feature.
 #' @param min.features numeric. The minimum number of features per cell.
 #' @param percent.mt numeric. Cutoff for mitochondrial RNA content.
-#'
+
 #' @return a Seurat spatial object
 #' @export
-#'
+
 #' @examples make.object(data.dir,h5.filename)
 
 make.object.spatial <- function(data.name = NULL,

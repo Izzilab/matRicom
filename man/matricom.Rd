@@ -11,10 +11,13 @@ matricom(
   expr.filter = 1,
   target = NULL,
   geneset = NULL,
-  max.ligands = 50,
-  max.targets = 50,
+  max.ligands = 10,
+  max.targets = 10,
   explainable = TRUE,
+  add.RF = TRUE,
   scale.results = TRUE,
+  use.ensembl = FALSE,
+  force.flushing = FALSE,
   verbose = T
 )
 }
@@ -31,18 +34,22 @@ matricom(
 
 \item{geneset}{character. A response geneset (a vector of gene names matching those of the counts in the object) to test ligands against. If NULL (default), a recursive cell type-vs.-all DEG search is launched using Seurat functions.}
 
-\item{max.ligands}{numeric. Maximum number of ligands to test for response. Default is 50, in decreasing Pearson order.}
+\item{max.ligands}{numeric. Maximum number of ligands to test for response. Default is 10, in decreasing Pearson order.}
 
-\item{max.targets}{numeric. Maximum number of targets to continue with after having tested the response. Default is 50, in decreasing gene expression order.}
+\item{max.targets}{numeric. Maximum number of targets to continue with after having tested the response. Default is 10, in decreasing gene expression order.}
 
-\item{explainable}{logical. Whether to apply the two-step adaptive lasso procedure to targets. The first step regresses targets vs. TFs, while the second regresses the TFs vs. the receptors, thus forming a "path" to explain the expression of a target gene. Default is TRUE.}
+\item{explainable}{logical. Whether to apply differential correlation analysis to targets' regulators. In the analysis, all known regulators of each target gene per receiving population are correlated to their targets with Spearman correlation. In parallel, the same tests are repeated across the rest of sample (non-receiving population). Results are confronted and the regulator with the highest differential (positive) correlation in the receiving population is chosen as the master regulator and reported. Default is TRUE.}
+
+\item{add.RF}{logical. Whether to add a random forest run to the results from the correlation analysis. Features are ordered by their VarImp and as many as max.ligands (up to twice that value, once for receptors and once for TF) are chosen. Default is TRUE.}
 
 \item{scale.results}{logical. Whether to rescale the gene expression values of ligands/receptors/targets to the [0.01-1] interval by cell type to ease cross-comparisons. Default is TRUE.}
+
+\item{use.ensembl}{logical. Whether to try and convert all matricom objects and complex annotation to ENSEMBLE GENE IDs on the fly to extend compatibility. It is not guaranteed to work.}
 
 \item{verbose}{logical. Progress messages are printed to the console. Default is TRUE.}
 }
 \value{
-a dataframe with ligand/receptor/target triplets, the sender and receiver cells for each, and the mean expression values of each triplet.
+a dataframe with ligand/receptor/TF/target quadruplets, the sender and receiver cells for each, and the mean expression values of each triplet.
 }
 \description{
 matricom: cell-ECM communications in scRNAseq data
